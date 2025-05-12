@@ -8,7 +8,6 @@ export const Register = (props) => {
   const [user, setUser] = useState({
     email: "",
     name: "",
-    cohort: 0,
   });
   let navigate = useNavigate();
 
@@ -89,7 +88,6 @@ export const Register = (props) => {
               type="number"
               id="cohort"
               className="auth-form-input"
-              placeholder="Cohort #"
               required
             />
           </div>

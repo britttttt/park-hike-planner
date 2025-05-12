@@ -1,3 +1,30 @@
+import { Link, Navigate } from "react-router-dom"
+import ".//NavBar.css"
+
 export const NavBar = () => {
-    return <></>
+    return (
+        <ul className="nav-bar">
+            <li className="nav-bar-item">
+                <Link className="nav-bar-link" to="/">
+                    MyHikes
+                </Link>
+            </li>
+            {localStorage.getItem("learning_user") ? (
+                <li className="nav-bar-item">
+                    <Link
+                        className="nav-bar-link"
+                        to=""
+                        onClick={() => {
+                            localStorage.removeItem("learning_user");
+                            Navigate("/login", { replace: true });
+                        }}
+                    >
+                        Logout
+                    </Link>
+                </li>
+            ) : (
+                ""
+            )}
+        </ul>
+    )
 }
