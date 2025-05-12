@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./HikeForm.css"
 import { getFeatures, getTrails } from "../../Services/TrailService"
 import { useNavigate } from "react-router-dom"
+import { getMonths } from "../../Services/HikePlanService"
 
 export const HikeForm = () => {
 
@@ -16,41 +17,51 @@ export const HikeForm = () => {
     })
 
     const [trails, setTrails] = useState([])
+    const [features, setFeatures] = useState([])
+    const [selectedFeatures, setSelectedFeatures] = useState([])
+    const [months, setMonths] = useState([])
 
     useEffect(() => {
         getTrails().then(setTrails)
-    }, [])
-
-    const [features, setFeatures] = useState([])
-    const [selectedFeatures, setSelectedFeatures] = useState([])
-
-    useEffect(() => {
         getFeatures().then((res) => setFeatures(res))
+        getMonths().then((res) => setMonths(res))
     }, [])
-
-
 
 
     const navigate = useNavigate()
 
-    const handleFeatures = (event) => {
-        const id = parseInt(event.target.value)
+    const handleSelection = (event) => {
+        setHikeFormChoices((prev) => ({
+            ...prev,
+            month: parseInt(event.target.value),
+        }))
+    }
+
+
+const handleFeatures = (event) => {
+    const id = parseInt(event.target.value)
+    setSelectedFeatures((prevSelected) => {
+        let updated
         if (event.target.checked) {
-            setSelectedFeatures((prev) => [...prev, id]);
+            updated = [...prevSelected, id]
         } else {
-            setSelectedFeatures(
-                setSelectedFeatures((prev) => prev.filter((featureId) => featureId !== id))
-            );
+            updated = prevSelected.filter((featureId) => featureId !== id)
         }
-    };
+
+        setHikeFormChoices(prev => ({
+            ...prev,
+            hikeFeatures: updated
+        }))
+
+        return updated
+    })
+}
 
 
     const handleSubmit = (event) => {
         event.preventDefault()
         navigate(`/FilteredTrails`)
     }
-
-
 
 
     return (
@@ -61,14 +72,22 @@ export const HikeForm = () => {
             <div className="drop-down">
                 <h3>What month is your hike going to be in?</h3>
                 <article className="dropdown">
-                    <select id="month-selector"
+                    <select
+                        id="month-selector"
+                        name="month"
+                        value={hikeFormChoices.month}
+                        onChange={handleSelection}
                         required
-                        default value=""
-                        onChange={() => {
-                        }}
                     ><option disabled value="">
                             Choose Month
                         </option>
+                        {months.map((month) => {
+                            return (
+                                <option value={month.id} key={month.id}>
+                                    {month.name}
+                                </option>
+                            )
+                        })}
                     </select>
                 </article>
             </div>
@@ -93,39 +112,39 @@ export const HikeForm = () => {
                     <input className="difficulty-checkbox"
                         type="radio" value="2" name="hikingExperience"
                         checked={hikeFormChoices.hikeExperience === 2}
-                        onChange={(event) => 
+                        onChange={(event) =>
                             setHikeFormChoices((prev) => ({
                                 ...prev,
                                 hikeExperience: parseInt(event.target.value),
                             }))
                         }
-                            />{" "} 
-                            Some
+                    />{" "}
+                    Some
                 </label>
                 <label>
                     <input className="difficulty-checkbox"
                         type="radio" value="3" name="hikingExperience"
                         checked={hikeFormChoices.hikeExperience === 3}
-                        onChange={(event) => 
-                        setHikeFormChoices((prev) => ({
-                            ...prev,
-                            hikeExperience: parseInt(event.target.value),
+                        onChange={(event) =>
+                            setHikeFormChoices((prev) => ({
+                                ...prev,
+                                hikeExperience: parseInt(event.target.value),
                             }))
                         } />{" "}
-                         Moderate
+                    Moderate
                 </label>
                 <label>
                     <input className="difficulty-checkbox"
-                        type="radio" value="4" name="hikingExperience" 
-                        checked = {hikeFormChoices.hikeExperience === 4}
-                        onChange={(event) => 
+                        type="radio" value="4" name="hikingExperience"
+                        checked={hikeFormChoices.hikeExperience === 4}
+                        onChange={(event) =>
                             setHikeFormChoices((prev) => ({
                                 ...prev,
                                 hikeExperience: parseInt(event.target.value),
                             }))
                         }
-                         />{" "}
-                         Expert
+                    />{" "}
+                    Expert
                 </label>
             </div>
 
@@ -140,8 +159,8 @@ export const HikeForm = () => {
                     onChange={(event) => {
                         setHikeFormChoices(prev => ({
                             ...prev,
-                            hikeLength: event.target.value
-                        }));
+                            hikeLength: parseInt(event.target.value)
+                        }))
                     }}
                 />
                 <p><output id="value">{hikeFormChoices.hikeLength}</output> Miles</p>
@@ -157,7 +176,7 @@ export const HikeForm = () => {
                     onChange={(event) => {
                         setHikeFormChoices(prev => ({
                             ...prev,
-                            hikeElvGain: event.target.value
+                            hikeElvGain: parseInt(event.target.value)
                         }))
                     }} />
                 <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
@@ -167,49 +186,49 @@ export const HikeForm = () => {
                 <h3>Are you bringing dogs?</h3>
                 <label>
                     <input className="dog-checkbox" type="radio" name="dog-checkbox"
-                    value={true} 
-                    onChange={(event) => {
-                        setHikeFormChoices(prev => ({
-                            ...prev,
-                            bringingDogs: event.target.value
-                        }))
-                    }} /> Yes
+                        value={true}
+                        onChange={(event) => {
+                            setHikeFormChoices(prev => ({
+                                ...prev,
+                                bringingDogs: event.target.value === "true"
+                            }))
+                        }} /> Yes
                 </label>
                 <label>
                     <input className="dog-checkbox" type="radio" name="dog-checkbox"
-                    value={false}
-                    onChange={(event) => {
-                        setHikeFormChoices(prev => ({
-                            ...prev,
-                            bringingDogs: event.target.value
-                        }))
-                    }} /> No
+                        value={false}
+                        onChange={(event) => {
+                            setHikeFormChoices(prev => ({
+                                ...prev,
+                                bringingDogs: event.target.value === "true"
+                            }))
+                        }} /> No
                 </label>
             </div>
 
             <div className="form-group">
                 <h3>Does your hike need to be accessible for wheelchairs or strollers?</h3>
                 <label>
-                    <input className="mobilityAid-checkbox" type="radio" 
-                    name="mobility-aid"
-                    value={true}
-                    onChange={(event) => {
-                        setHikeFormChoices(prev => ({
-                            ...prev,
-                            mobilityAccessibility: event.target.value
-                        }))
-                    }}/> Yes
+                    <input className="mobilityAid-checkbox" type="radio"
+                        name="mobility-aid"
+                        value={true}
+                        onChange={(event) => {
+                            setHikeFormChoices(prev => ({
+                                ...prev,
+                                mobilityAccessibility: event.target.value === "true"
+                            }))
+                        }} /> Yes
                 </label>
                 <label>
                     <input className="mobilityAid-checkbox" type="radio"
-                    name="mobility-aid"
-                    value={false}
-                    onChange={(event) => {
-                        setHikeFormChoices(prev => ({
-                            ...prev,
-                            mobilityAccessibility: event.target.value
-                        }))
-                    }} /> No
+                        name="mobility-aid"
+                        value={false}
+                        onChange={(event) => {
+                            setHikeFormChoices(prev => ({
+                                ...prev,
+                                mobilityAccessibility: event.target.value === "true"
+                            }))
+                        }} /> No
                 </label>
             </div>
 
