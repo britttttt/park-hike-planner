@@ -5,6 +5,7 @@ import { ViewHikePlan } from "../Components/HikePlan/ViewHikePlan";
 import { CreateHikePlan } from "../Components/HikePlan/CreateHikePlan";
 import { MyHikes } from "../Components/MyHikes/MyHikes";
 import { NavBar } from "../Components/Nav/NavBar";
+import { HikeForm } from "../Components/Forms/HikeForm";
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({});
@@ -30,6 +31,10 @@ export const ApplicationViews = () => {
         <Route
           path="/CreateHikePlan"
           element={<CreateHikePlan currentUser={currentUser} />}
+        />
+        <Route
+          path="/HikeForm"
+          element={<HikeForm currentUser={currentUser} />}
         />
         <Route
           path="/ViewHikePlan/:HikeId"
