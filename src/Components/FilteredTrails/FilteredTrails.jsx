@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
 export const FilteredTrails= () => {
-return <></>
+
+    return (
+        <div className="filtered-trails">
+
+        </div>
+)
 }
