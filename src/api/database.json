@@ -95,1019 +95,916 @@
         }
     ],
     "trails": [
-        {
-            "id": 1,
-            "name": "Abrams Falls",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 5.2,
-            "elevation_gain_ft": 675,
-            "difficulty_score": 6.55,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 2,
-            "name": "Albright Grove",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Old Growth Forest",
-                "History",
-                "Solitude"
-            ],
-            "distance_miles": 6.7,
-            "elevation_gain_ft": 1475,
-            "difficulty_score": 9.65,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 3,
-            "name": "Alum Cave",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Views",
-                "Interesting Geological Features"
-            ],
-            "distance_miles": 4.4,
-            "elevation_gain_ft": 1125,
-            "difficulty_score": 6.65,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 4,
-            "name": "Andrews Bald",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Panoramic Views"
-            ],
-            "distance_miles": 3.5,
-            "elevation_gain_ft": 3.5,
-            "difficulty_score": 5.3,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 5,
-            "name": "Avent Cabin",
-            "location": "Elkmont",
-            "features": [
-                "History",
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 2.0,
-            "elevation_gain_ft": 505,
-            "difficulty_score": 3.01,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 6,
-            "name": "Balsam High Top",
-            "location": "Balsam Mountain",
-            "features": [
-                "Solitude",
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 7.6,
-            "elevation_gain_ft": 2535,
-            "difficulty_score": 12.67,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 7,
-            "name": "Baskins Creek Falls",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 3.0,
-            "elevation_gain_ft": 953,
-            "difficulty_score": 4.91,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 8,
-            "name": "Benton MacKaye Trail",
-            "location": "Great Smoky Mountains",
-            "features": [
-                "Long Distance Hiking"
-            ],
-            "distance_miles": null,
-            "elevation_gain_ft": null,
-            "difficulty_score": null,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 9,
-            "name": "Big Creek / Mouse Creek Falls",
-            "location": "Big Creek",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 4.2,
-            "elevation_gain_ft": 605,
-            "difficulty_score": 5.41,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 10,
-            "name": "Brushy Mountain (Trillium Gap)",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Views",
-                "Wildflowers",
-                "Waterfalls"
-            ],
-            "distance_miles": 6.8,
-            "elevation_gain_ft": 1745,
-            "difficulty_score": 10.29,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 11,
-            "name": "Bullhead Trail",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Views",
-                "Interesting Geological Features"
-            ],
-            "distance_miles": 5.9,
-            "elevation_gain_ft": 1607,
-            "difficulty_score": 9.11,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 12,
-            "name": "Cataloochee Divide",
-            "location": "Cataloochee",
-            "features": [
-                "Views",
-                "Historic",
-                "Wildflowers"
-            ],
-            "distance_miles": 10.0,
-            "elevation_gain_ft": 1250,
-            "difficulty_score": 12.5,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 13,
-            "name": "Charlies Bunion",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Panoramic Views"
-            ],
-            "distance_miles": 8.1,
-            "elevation_gain_ft": 1640,
-            "difficulty_score": 11.38,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 14,
-            "name": "Chasteen Creek Cascade",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Waterfall",
-                "Stream",
-                "Wildflowers"
-            ],
-            "distance_miles": 3.6,
-            "elevation_gain_ft": 340,
-            "difficulty_score": 4.28,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 15,
-            "name": "Chestnut Top",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Views",
-                "Wildflowers"
-            ],
-            "distance_miles": 8.6,
-            "elevation_gain_ft": 1486,
-            "difficulty_score": 11.57,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 16,
-            "name": "Chimney Tops",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Panoramic Views"
-            ],
-            "distance_miles": 3.3,
-            "elevation_gain_ft": 1487,
-            "difficulty_score": 6.27,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 17,
-            "name": "Cove Mountain",
-            "location": "Elkmont",
-            "features": [
-                "Waterfalls",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 7.7,
-            "elevation_gain_ft": 1776,
-            "difficulty_score": 11.25,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 18,
-            "name": "Cucumber Gap Loop",
-            "location": "Elkmont",
-            "features": [
-                "Stream",
-                "Wildflowers",
-                "Historical"
-            ],
-            "distance_miles": 5.6,
-            "elevation_gain_ft": 830,
-            "difficulty_score": 7.26,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 19,
-            "name": "Curry Mountain Trail",
-            "location": "Elkmont",
-            "features": [
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 6.4,
-            "elevation_gain_ft": 1164,
-            "difficulty_score": 8.73,
-            "lat": 35.67555601900059,
-            "lng": -83.64640885073038,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 20,
-            "name": "Deep Creek Loop",
-            "location": " Cherokee / Deep Creek",
-            "features": [
-                "Waterfalls",
-                "Wildflowers"
-            ],
-            "distance_miles": 4.6,
-            "elevation_gain_ft": 579,
-            "difficulty_score": 5.76,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 21,
-            "name": "Flat Creek Falls",
-            "location": "Balsam Mountain",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 4,
-            "elevation_gain_ft": 600,
-            "difficulty_score": 5.2,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 22,
-            "name": "Gatlinburg Trail",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Stream ",
-                "History"
-            ],
-            "distance_miles": 3.9,
-            "elevation_gain_ft": 235,
-            "difficulty_score": 4.37,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 23,
-            "name": "Goldmine Loop",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Historical",
-                "Lake Views"
-            ],
-            "distance_miles": 3.1,
-            "elevation_gain_ft": 615,
-            "difficulty_score": 4.33,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 24,
-            "name": "Grapeyard Ridge Trail (Greenbrier)",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Historical",
-                "Injun Creek steam engine wreck"
-            ],
-            "distance_miles": 5.8,
-            "elevation_gain_ft": 980,
-            "difficulty_score": 7.76,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 25,
-            "name": "Gregory Bald (Gregory Ridge)",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Flame Azaleas",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 11.3,
-            "elevation_gain_ft": 3020,
-            "difficulty_score": 17.34,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 26,
-            "name": "Gregory Bald (Parson Branch)",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Flame Azaleas",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 8.8,
-            "elevation_gain_ft": 2300,
-            "difficulty_score": 13.4,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 27,
-            "name": "Grotto Falls",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 2.6,
-            "elevation_gain_ft": 585,
-            "difficulty_score": 3.77,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 28,
-            "name": "Hemphill Bald Loop",
-            "location": "Balsam Mountain",
-            "features": [
-                "Panoramic Views",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 13.7,
-            "elevation_gain_ft": 2170,
-            "difficulty_score": 18.04,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 29,
-            "name": "Hen Wallow Falls",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 4.4,
-            "elevation_gain_ft": 900,
-            "difficulty_score": 6.2,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 30,
-            "name": "Huskey Gap (Little River Trail)",
-            "location": "Elkmont",
-            "features": [
-                "Stream",
-                "Wildflowers",
-                "Historical"
-            ],
-            "distance_miles": 10.0,
-            "elevation_gain_ft": 1080,
-            "difficulty_score": 12.16,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 31,
-            "name": "Huskey Gap (Newfound Gap Rd)",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Quiet Forest Hike",
-                "Wildflowers"
-            ],
-            "distance_miles": 4.2,
-            "elevation_gain_ft": 1270,
-            "difficulty_score": 6.74,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 32,
-            "name": "Indian Creek Falls",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 1.9,
-            "elevation_gain_ft": 150,
-            "difficulty_score": 2.2,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 33,
-            "name": "Kephart Prong Trail",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Stream",
-                "Historical"
-            ],
-            "distance_miles": 4.2,
-            "elevation_gain_ft": 955,
-            "difficulty_score": 6.11,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 34,
-            "name": "Laurel Falls",
-            "location": "Elkmont",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 2.3,
-            "elevation_gain_ft": 314,
-            "difficulty_score": 2.93,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 35,
-            "name": "Little Brier Gap",
-            "location": "Elkmont",
-            "features": [
-                "Walker Sisters Place"
-            ],
-            "distance_miles": 2.6,
-            "elevation_gain_ft": 285,
-            "difficulty_score": 3.17,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 36,
-            "name": "Little River Trail",
-            "location": "Elkmont",
-            "features": [
-                "Stream",
-                "Wildflowers",
-                "Historical"
-            ],
-            "distance_miles": 4.9,
-            "elevation_gain_ft": 412,
-            "difficulty_score": 5.72,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 37,
-            "name": "Lonesome Pine Overlook",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Views"
-            ],
-            "distance_miles": 6.7,
-            "elevation_gain_ft": 2300,
-            "difficulty_score": 11.3,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 38,
-            "name": "Lumber Ridge Trail",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Quiet Forest Hike",
-                "Solitude"
-            ],
-            "distance_miles": 8.1,
-            "elevation_gain_ft": 1524,
-            "difficulty_score": 11.15,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 39,
-            "name": "Meigs Creek Trail",
-            "location": "Elkmont",
-            "features": [
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 7,
-            "elevation_gain_ft": 1380,
-            "difficulty_score": 9.76,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 40,
-            "name": "Meigs Mountain Trail",
-            "location": "Elkmont",
-            "features": [
-                "Quiet Forest",
-                "History"
-            ],
-            "distance_miles": 4.6,
-            "elevation_gain_ft": 661,
-            "difficulty_score": 5.92,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 41,
-            "name": "Middle Prong Trail",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Waterfalls",
-                "History"
-            ],
-            "distance_miles": 8.3,
-            "elevation_gain_ft": 1140,
-            "difficulty_score": 10.58,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 42,
-            "name": "Mingus Creek Trail",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Historic",
-                "Wildflowers",
-                "Stream"
-            ],
-            "distance_miles": 5.8,
-            "elevation_gain_ft": 1515,
-            "difficulty_score": 8.83,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 43,
-            "name": "Mountains-to-Sea Trail",
-            "location": "Great Smoky Mountains",
-            "features": [
-                "Long Distance Hiking"
-            ],
-            "distance_miles": null,
-            "elevation_gain_ft": null,
-            "difficulty_score": null,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 44,
-            "name": "Mt. Cammerer",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Panoramic Views",
-                "Historical"
-            ],
-            "distance_miles": 11.1,
-            "elevation_gain_ft": 3045,
-            "difficulty_score": 17.19,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 45,
-            "name": "Mt. LeConte (Boulevard Trail)",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Panoramic Views",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 15.6,
-            "elevation_gain_ft": 3000,
-            "difficulty_score": 21.6,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 46,
-            "name": "Mt. LeConte (via Bullhead)",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Panoramic Views"
-            ],
-            "distance_miles": 14.4,
-            "elevation_gain_ft": 3993,
-            "difficulty_score": 22.39,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 47,
-            "name": "Mt. LeConte (Rainbow Falls)",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Panoramic Views",
-                "Waterfalls"
-            ],
-            "distance_miles": 13.8,
-            "elevation_gain_ft": 3993,
-            "difficulty_score": 21.79,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 48,
-            "name": "Mt. LeConte (via Trillium Gap)",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Panoramic Views",
-                "Waterfalls"
-            ],
-            "distance_miles": 13.9,
-            "elevation_gain_ft": 3401,
-            "difficulty_score": 20.7,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 49,
-            "name": "Mt. Sterling (via Baxter Creek)",
-            "location": "Big Creek",
-            "features": [
-                "Panoramic Views",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 12.2,
-            "elevation_gain_ft": 4200,
-            "difficulty_score": 20.6,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 50,
-            "name": "Newton Bald",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Quiet Forest Hike",
-                "Views"
-            ],
-            "distance_miles": 10,
-            "elevation_gain_ft": 2800,
-            "difficulty_score": 15.6,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 51,
-            "name": "Noland Divide",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Views",
-                "Forest Diversity"
-            ],
-            "distance_miles": 7.2,
-            "elevation_gain_ft": 1679,
-            "difficulty_score": 10.56,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 52,
-            "name": "Oconaluftee River Trail",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Historical",
-                "Stream"
-            ],
-            "distance_miles": 3,
-            "elevation_gain_ft": 70,
-            "difficulty_score": 3.14,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 53,
-            "name": "Ogle Place",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "History",
-                "Stream"
-            ],
-            "distance_miles": 0.8,
-            "elevation_gain_ft": 90,
-            "difficulty_score": 0.98,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 54,
-            "name": "Old Settlers Trail (Maddron Bald)",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Historical",
-                "Tyson McCarter Barn"
-            ],
-            "distance_miles": 8.8,
-            "elevation_gain_ft": 1650,
-            "difficulty_score": 12.1,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 55,
-            "name": "Porters Creek Trail",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Waterfalls",
-                "Stream",
-                "Flowers",
-                "Historical",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 4,
-            "elevation_gain_ft": 699,
-            "difficulty_score": 5.4,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 56,
-            "name": "Rainbow Falls",
-            "location": "Gatlinburg / Mt. LeConte",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 5.4,
-            "elevation_gain_ft": 1685,
-            "difficulty_score": 8.77,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 57,
-            "name": "Ramsey Cascades",
-            "location": "Greenbrier / Cosby",
-            "features": [
-                "Waterfalls",
-                "Old Growth Forest"
-            ],
-            "distance_miles": 8,
-            "elevation_gain_ft": 2190,
-            "difficulty_score": 12.38,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 58,
-            "name": "Rich Mountain Loop",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Views",
-                "Wildflowers",
-                "Historical"
-            ],
-            "distance_miles": 8.5,
-            "elevation_gain_ft": 1736,
-            "difficulty_score": 1736,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 59,
-            "name": "Rocky Top / Thunderhead",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Mtn Laurel"
-            ],
-            "distance_miles": 13.9,
-            "elevation_gain_ft": 3665,
-            "difficulty_score": 21.23,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 60,
-            "name": "Rough Fork Trail",
-            "location": "Balsam Mountain",
-            "features": [
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 5.2,
-            "elevation_gain_ft": 600,
-            "difficulty_score": 6.4,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 61,
-            "name": "Schoolhouse Gap",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Quiet Forest Hike",
-                "Wildflowers"
-            ],
-            "distance_miles": 3.8,
-            "elevation_gain_ft": 513,
-            "difficulty_score": 4.83,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 62,
-            "name": "Schoolhouse Gap",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Quiet Forest Hike",
-                "Wildflowers"
-            ],
-            "distance_miles": 3.8,
-            "elevation_gain_ft": 513,
-            "difficulty_score": 4.83,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 63,
-            "name": "Silers Bald",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Panoramic Views"
-            ],
-            "distance_miles": 9.3,
-            "elevation_gain_ft": 2152,
-            "difficulty_score": 13.6,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 64,
-            "name": "Smokemont Loop",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Stream",
-                "Wildflowers",
-                "Forest"
-            ],
-            "distance_miles": 6.5,
-            "elevation_gain_ft": 1441,
-            "difficulty_score": 9.38,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 65,
-            "name": "Spence Field (Anthony Creek)",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Mtn Laurel"
-            ],
-            "distance_miles": 10.3,
-            "elevation_gain_ft": 2842,
-            "difficulty_score": 15.98,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 66,
-            "name": "Spence Field (via Lead Cove)",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Mtn Laurel"
-            ],
-            "distance_miles": 9.4,
-            "elevation_gain_ft": 3100,
-            "difficulty_score": 15.6,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 67,
-            "name": "Spence / Russell Field Loop",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Panoramic Views",
-                "Mtn Laurel"
-            ],
-            "distance_miles": 13.3,
-            "elevation_gain_ft": 3050,
-            "difficulty_score": 19.4,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 68,
-            "name": "Spruce-Fir Trail",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Spruce-Fir Forest"
-            ],
-            "distance_miles": 0.4,
-            "elevation_gain_ft": 25,
-            "difficulty_score": 0.4,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 69,
-            "name": "Spruce Flats Falls",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Waterfall"
-            ],
-            "distance_miles": 1.4,
-            "elevation_gain_ft": 460,
-            "difficulty_score": 2.32,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 70,
-            "name": "Sugarland Mtn Trail (upper)",
-            "location": "Newfound Gap / Clingmans Dome",
-            "features": [
-                "Solitude",
-                "Views"
-            ],
-            "distance_miles": 7,
-            "elevation_gain_ft": 1090,
-            "difficulty_score": 9.18,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 71,
-            "name": "Sugarland Mtn Trail (lower)",
-            "location": "Elkmont",
-            "features": [
-                "Quiet Forest Hike"
-            ],
-            "distance_miles": 6,
-            "elevation_gain_ft": 1500,
-            "difficulty_score": 9,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 72,
-            "name": "Toms Branch Falls",
-            "location": "Cherokee / Deep Creek",
-            "features": [
-                "Waterfalls"
-            ],
-            "distance_miles": 0.6,
-            "elevation_gain_ft": 47,
-            "difficulty_score": 0.69,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        },
-        {
-            "id": 73,
-            "name": "West Prong Trail",
-            "location": "Cades Cove / Townsend",
-            "features": [
-                "Quiet Forest Hike",
-                "Stream"
-            ],
-            "distance_miles": 5.4,
-            "elevation_gain_ft": 1375,
-            "difficulty_score": 8.15,
-            "dogFriendly": false,
-            "mobilityAccessibility": false
-        }
-    ]
+    {
+      "id": 1,
+      "name": "Abrams Falls",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        7
+      ],
+      "distance_miles": 5.2,
+      "elevation_gain_ft": 675,
+      "difficulty_score": 6.55,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 2,
+      "name": "Albright Grove",
+      "location": "Greenbrier / Cosby",
+      "features": [
+        5,
+        1
+      ],
+      "distance_miles": 6.7,
+      "elevation_gain_ft": 1475,
+      "difficulty_score": 9.65,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 3,
+      "name": "Alum Cave",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        2
+      ],
+      "distance_miles": 4.4,
+      "elevation_gain_ft": 1125,
+      "difficulty_score": 6.65,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 4,
+      "name": "Andrews Bald",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [],
+      "distance_miles": 3.5,
+      "elevation_gain_ft": 3.5,
+      "difficulty_score": 5.3,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 5,
+      "name": "Avent Cabin",
+      "location": "Elkmont",
+      "features": [
+        1
+      ],
+      "distance_miles": 2.0,
+      "elevation_gain_ft": 505,
+      "difficulty_score": 3.01,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 6,
+      "name": "Balsam High Top",
+      "location": "Balsam Mountain",
+      "features": [],
+      "distance_miles": 7.6,
+      "elevation_gain_ft": 2535,
+      "difficulty_score": 12.67,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 7,
+      "name": "Baskins Creek Falls",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        7
+      ],
+      "distance_miles": 3.0,
+      "elevation_gain_ft": 953,
+      "difficulty_score": 4.91,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 8,
+      "name": "Benton MacKaye Trail",
+      "location": "Great Smoky Mountains",
+      "features": [],
+      "distance_miles": null,
+      "elevation_gain_ft": null,
+      "difficulty_score": null,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 9,
+      "name": "Big Creek / Mouse Creek Falls",
+      "location": "Big Creek",
+      "features": [
+        7
+      ],
+      "distance_miles": 4.2,
+      "elevation_gain_ft": 605,
+      "difficulty_score": 5.41,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 10,
+      "name": "Brushy Mountain (Trillium Gap)",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        2,
+        4,
+        7
+      ],
+      "distance_miles": 6.8,
+      "elevation_gain_ft": 1745,
+      "difficulty_score": 10.29,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 11,
+      "name": "Bullhead Trail",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        2
+      ],
+      "distance_miles": 5.9,
+      "elevation_gain_ft": 1607,
+      "difficulty_score": 9.11,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 12,
+      "name": "Cataloochee Divide",
+      "location": "Cataloochee",
+      "features": [
+        2,
+        4
+      ],
+      "distance_miles": 10.0,
+      "elevation_gain_ft": 1250,
+      "difficulty_score": 12.5,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 13,
+      "name": "Charlies Bunion",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [],
+      "distance_miles": 8.1,
+      "elevation_gain_ft": 1640,
+      "difficulty_score": 11.38,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 14,
+      "name": "Chasteen Creek Cascade",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        4
+      ],
+      "distance_miles": 3.6,
+      "elevation_gain_ft": 340,
+      "difficulty_score": 4.28,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 15,
+      "name": "Chestnut Top",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        2,
+        4
+      ],
+      "distance_miles": 8.6,
+      "elevation_gain_ft": 1486,
+      "difficulty_score": 11.57,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 16,
+      "name": "Chimney Tops",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [],
+      "distance_miles": 3.3,
+      "elevation_gain_ft": 1487,
+      "difficulty_score": 6.27,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 17,
+      "name": "Cove Mountain",
+      "location": "Elkmont",
+      "features": [
+        7,
+        5
+      ],
+      "distance_miles": 7.7,
+      "elevation_gain_ft": 1776,
+      "difficulty_score": 11.25,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 18,
+      "name": "Cucumber Gap Loop",
+      "location": "Elkmont",
+      "features": [
+        4
+      ],
+      "distance_miles": 5.6,
+      "elevation_gain_ft": 830,
+      "difficulty_score": 7.26,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 19,
+      "name": "Curry Mountain Trail",
+      "location": "Elkmont",
+      "features": [],
+      "distance_miles": 6.4,
+      "elevation_gain_ft": 1164,
+      "difficulty_score": 8.73,
+      "lat": 35.67555601900059,
+      "lng": -83.64640885073038,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 20,
+      "name": "Deep Creek Loop",
+      "location": " Cherokee / Deep Creek",
+      "features": [
+        7,
+        4
+      ],
+      "distance_miles": 4.6,
+      "elevation_gain_ft": 579,
+      "difficulty_score": 5.76,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 21,
+      "name": "Flat Creek Falls",
+      "location": "Balsam Mountain",
+      "features": [
+        7
+      ],
+      "distance_miles": 4,
+      "elevation_gain_ft": 600,
+      "difficulty_score": 5.2,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 22,
+      "name": "Gatlinburg Trail",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        1
+      ],
+      "distance_miles": 3.9,
+      "elevation_gain_ft": 235,
+      "difficulty_score": 4.37,
+      "dogFriendly": true,
+      "mobilityAccessibility": true
+    },
+    {
+      "id": 23,
+      "name": "Goldmine Loop",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        3
+      ],
+      "distance_miles": 3.1,
+      "elevation_gain_ft": 615,
+      "difficulty_score": 4.33,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 24,
+      "name": "Grapeyard Ridge Trail (Greenbrier)",
+      "location": "Greenbrier / Cosby",
+      "features": [],
+      "distance_miles": 5.8,
+      "elevation_gain_ft": 980,
+      "difficulty_score": 7.76,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 25,
+      "name": "Gregory Bald (Gregory Ridge)",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        5
+      ],
+      "distance_miles": 11.3,
+      "elevation_gain_ft": 3020,
+      "difficulty_score": 17.34,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 26,
+      "name": "Gregory Bald (Parson Branch)",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        5
+      ],
+      "distance_miles": 8.8,
+      "elevation_gain_ft": 2300,
+      "difficulty_score": 13.4,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 27,
+      "name": "Grotto Falls",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        7
+      ],
+      "distance_miles": 2.6,
+      "elevation_gain_ft": 585,
+      "difficulty_score": 3.77,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 28,
+      "name": "Hemphill Bald Loop",
+      "location": "Balsam Mountain",
+      "features": [
+        5
+      ],
+      "distance_miles": 13.7,
+      "elevation_gain_ft": 2170,
+      "difficulty_score": 18.04,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 29,
+      "name": "Hen Wallow Falls",
+      "location": "Greenbrier / Cosby",
+      "features": [
+        7
+      ],
+      "distance_miles": 4.4,
+      "elevation_gain_ft": 900,
+      "difficulty_score": 6.2,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 30,
+      "name": "Huskey Gap (Little River Trail)",
+      "location": "Elkmont",
+      "features": [
+        4
+      ],
+      "distance_miles": 10.0,
+      "elevation_gain_ft": 1080,
+      "difficulty_score": 12.16,
+      "dogFriendly": false,
+      "mobilityAccessibility": true
+    },
+    {
+      "id": 31,
+      "name": "Huskey Gap (Newfound Gap Rd)",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        4
+      ],
+      "distance_miles": 4.2,
+      "elevation_gain_ft": 1270,
+      "difficulty_score": 6.74,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 32,
+      "name": "Indian Creek Falls",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        7
+      ],
+      "distance_miles": 1.9,
+      "elevation_gain_ft": 150,
+      "difficulty_score": 2.2,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 33,
+      "name": "Kephart Prong Trail",
+      "location": "Cherokee / Deep Creek",
+      "features": [],
+      "distance_miles": 4.2,
+      "elevation_gain_ft": 955,
+      "difficulty_score": 6.11,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 34,
+      "name": "Laurel Falls",
+      "location": "Elkmont",
+      "features": [
+        7
+      ],
+      "distance_miles": 2.3,
+      "elevation_gain_ft": 314,
+      "difficulty_score": 2.93,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 35,
+      "name": "Little Brier Gap",
+      "location": "Elkmont",
+      "features": [],
+      "distance_miles": 2.6,
+      "elevation_gain_ft": 285,
+      "difficulty_score": 3.17,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 36,
+      "name": "Little River Trail",
+      "location": "Elkmont",
+      "features": [
+        4
+      ],
+      "distance_miles": 4.9,
+      "elevation_gain_ft": 412,
+      "difficulty_score": 5.72,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 37,
+      "name": "Lonesome Pine Overlook",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        2
+      ],
+      "distance_miles": 6.7,
+      "elevation_gain_ft": 2300,
+      "difficulty_score": 11.3,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 38,
+      "name": "Lumber Ridge Trail",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 8.1,
+      "elevation_gain_ft": 1524,
+      "difficulty_score": 11.15,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 39,
+      "name": "Meigs Creek Trail",
+      "location": "Elkmont",
+      "features": [],
+      "distance_miles": 7,
+      "elevation_gain_ft": 1380,
+      "difficulty_score": 9.76,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 40,
+      "name": "Meigs Mountain Trail",
+      "location": "Elkmont",
+      "features": [
+        6,
+        1
+      ],
+      "distance_miles": 4.6,
+      "elevation_gain_ft": 661,
+      "difficulty_score": 5.92,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 41,
+      "name": "Middle Prong Trail",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        7,
+        1
+      ],
+      "distance_miles": 8.3,
+      "elevation_gain_ft": 1140,
+      "difficulty_score": 10.58,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 42,
+      "name": "Mingus Creek Trail",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        4
+      ],
+      "distance_miles": 5.8,
+      "elevation_gain_ft": 1515,
+      "difficulty_score": 8.83,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 43,
+      "name": "Mountains-to-Sea Trail",
+      "location": "Great Smoky Mountains",
+      "features": [],
+      "distance_miles": null,
+      "elevation_gain_ft": null,
+      "difficulty_score": null,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 44,
+      "name": "Mt. Cammerer",
+      "location": "Greenbrier / Cosby",
+      "features": [],
+      "distance_miles": 11.1,
+      "elevation_gain_ft": 3045,
+      "difficulty_score": 17.19,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 45,
+      "name": "Mt. LeConte (Boulevard Trail)",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [
+        5
+      ],
+      "distance_miles": 15.6,
+      "elevation_gain_ft": 3000,
+      "difficulty_score": 21.6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 46,
+      "name": "Mt. LeConte (via Bullhead)",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [],
+      "distance_miles": 14.4,
+      "elevation_gain_ft": 3993,
+      "difficulty_score": 22.39,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 47,
+      "name": "Mt. LeConte (Rainbow Falls)",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        7
+      ],
+      "distance_miles": 13.8,
+      "elevation_gain_ft": 3993,
+      "difficulty_score": 21.79,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 48,
+      "name": "Mt. LeConte (via Trillium Gap)",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        7
+      ],
+      "distance_miles": 13.9,
+      "elevation_gain_ft": 3401,
+      "difficulty_score": 20.7,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 49,
+      "name": "Mt. Sterling (via Baxter Creek)",
+      "location": "Big Creek",
+      "features": [
+        5
+      ],
+      "distance_miles": 12.2,
+      "elevation_gain_ft": 4200,
+      "difficulty_score": 20.6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 50,
+      "name": "Newton Bald",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        2
+      ],
+      "distance_miles": 10,
+      "elevation_gain_ft": 2800,
+      "difficulty_score": 15.6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 51,
+      "name": "Noland Divide",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [
+        2
+      ],
+      "distance_miles": 7.2,
+      "elevation_gain_ft": 1679,
+      "difficulty_score": 10.56,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 52,
+      "name": "Oconaluftee River Trail",
+      "location": "Cherokee / Deep Creek",
+      "features": [],
+      "distance_miles": 3,
+      "elevation_gain_ft": 70,
+      "difficulty_score": 3.14,
+      "dogFriendly": true,
+      "mobilityAccessibility": true
+    },
+    {
+      "id": 53,
+      "name": "Ogle Place",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        1
+      ],
+      "distance_miles": 0.8,
+      "elevation_gain_ft": 90,
+      "difficulty_score": 0.98,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 54,
+      "name": "Old Settlers Trail (Maddron Bald)",
+      "location": "Greenbrier / Cosby",
+      "features": [],
+      "distance_miles": 8.8,
+      "elevation_gain_ft": 1650,
+      "difficulty_score": 12.1,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 55,
+      "name": "Porters Creek Trail",
+      "location": "Greenbrier / Cosby",
+      "features": [
+        7,
+        5
+      ],
+      "distance_miles": 4,
+      "elevation_gain_ft": 699,
+      "difficulty_score": 5.4,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 56,
+      "name": "Rainbow Falls",
+      "location": "Gatlinburg / Mt. LeConte",
+      "features": [
+        7
+      ],
+      "distance_miles": 5.4,
+      "elevation_gain_ft": 1685,
+      "difficulty_score": 8.77,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 57,
+      "name": "Ramsey Cascades",
+      "location": "Greenbrier / Cosby",
+      "features": [
+        7,
+        5
+      ],
+      "distance_miles": 8,
+      "elevation_gain_ft": 2190,
+      "difficulty_score": 12.38,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 58,
+      "name": "Rich Mountain Loop",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        2,
+        4
+      ],
+      "distance_miles": 8.5,
+      "elevation_gain_ft": 1736,
+      "difficulty_score": 1736,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 59,
+      "name": "Rocky Top / Thunderhead",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 13.9,
+      "elevation_gain_ft": 3665,
+      "difficulty_score": 21.23,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 60,
+      "name": "Rough Fork Trail",
+      "location": "Balsam Mountain",
+      "features": [],
+      "distance_miles": 5.2,
+      "elevation_gain_ft": 600,
+      "difficulty_score": 6.4,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 61,
+      "name": "Schoolhouse Gap",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        4
+      ],
+      "distance_miles": 3.8,
+      "elevation_gain_ft": 513,
+      "difficulty_score": 4.83,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 62,
+      "name": "Schoolhouse Gap",
+      "location": "Cades Cove / Townsend",
+      "features": [
+        4
+      ],
+      "distance_miles": 3.8,
+      "elevation_gain_ft": 513,
+      "difficulty_score": 4.83,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 63,
+      "name": "Silers Bald",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [],
+      "distance_miles": 9.3,
+      "elevation_gain_ft": 2152,
+      "difficulty_score": 13.6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 64,
+      "name": "Smokemont Loop",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        4
+      ],
+      "distance_miles": 6.5,
+      "elevation_gain_ft": 1441,
+      "difficulty_score": 9.38,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 65,
+      "name": "Spence Field (Anthony Creek)",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 10.3,
+      "elevation_gain_ft": 2842,
+      "difficulty_score": 15.98,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 66,
+      "name": "Spence Field (via Lead Cove)",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 9.4,
+      "elevation_gain_ft": 3100,
+      "difficulty_score": 15.6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 67,
+      "name": "Spence / Russell Field Loop",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 13.3,
+      "elevation_gain_ft": 3050,
+      "difficulty_score": 19.4,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 68,
+      "name": "Spruce-Fir Trail",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [],
+      "distance_miles": 0.4,
+      "elevation_gain_ft": 25,
+      "difficulty_score": 0.4,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 69,
+      "name": "Spruce Flats Falls",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 1.4,
+      "elevation_gain_ft": 460,
+      "difficulty_score": 2.32,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 70,
+      "name": "Sugarland Mtn Trail (upper)",
+      "location": "Newfound Gap / Clingmans Dome",
+      "features": [
+        2
+      ],
+      "distance_miles": 7,
+      "elevation_gain_ft": 1090,
+      "difficulty_score": 9.18,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 71,
+      "name": "Sugarland Mtn Trail (lower)",
+      "location": "Elkmont",
+      "features": [],
+      "distance_miles": 6,
+      "elevation_gain_ft": 1500,
+      "difficulty_score": 9,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 72,
+      "name": "Toms Branch Falls",
+      "location": "Cherokee / Deep Creek",
+      "features": [
+        7
+      ],
+      "distance_miles": 0.6,
+      "elevation_gain_ft": 47,
+      "difficulty_score": 0.69,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    },
+    {
+      "id": 73,
+      "name": "West Prong Trail",
+      "location": "Cades Cove / Townsend",
+      "features": [],
+      "distance_miles": 5.4,
+      "elevation_gain_ft": 1375,
+      "difficulty_score": 8.15,
+      "dogFriendly": false,
+      "mobilityAccessibility": false
+    }
+  ]
 }

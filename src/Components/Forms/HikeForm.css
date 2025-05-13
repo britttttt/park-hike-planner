@@ -7,3 +7,83 @@
   margin-top: 4rem;
   padding: 3em;
 }
+
+.filteredTrails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: 1;
+  height: 40em;
+  width: 90%;
+  margin-top: 20px;
+   margin-bottom: 20px;
+  background-color: rgb(39, 48, 39);
+  overflow: scroll;
+}
+
+.plan-hike {
+  overflow: scroll;
+  scrollbar-width: none;
+  border: 1px solid #0b8043;
+  background-color: #2f5a45;
+  height: 40em;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Scrollbar Styles */
+.filteredTrails::-webkit-scrollbar {
+  width: 12px;
+}
+
+.filteredTrails::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+.filteredTrails::-webkit-scrollbar-thumb {
+  background: #0f9d58;
+  border-radius: 8px;
+}
+
+.filteredTrails::-webkit-scrollbar-thumb:hover {
+  background: #0b8043;
+}
+
+/* For Firefox */
+.filteredTrails {
+  scrollbar-width: thin;
+  scrollbar-color: #0f9d58;
+}
+
+@media screen and (max-width: 600px) {
+  .filteredTrails {
+    height: 150px;
+  }
+}
+
+
+.trail-card {
+  display: flex;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.trail-card h4 {
+ color: #1d8f58;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
