@@ -9,13 +9,13 @@ export const NavBar = () => {
                     MyHikes
                 </Link>
             </li>
-            {localStorage.getItem("learning_user") ? (
+            {localStorage.getItem("hiking_user") ? (
                 <li className="nav-bar-item">
                     <Link
                         className="nav-bar-link"
                         to=""
                         onClick={() => {
-                            localStorage.removeItem("learning_user");
+                            localStorage.removeItem("hiking_user");
                             Navigate("/login", { replace: true });
                         }}
                     >

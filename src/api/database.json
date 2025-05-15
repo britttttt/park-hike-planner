@@ -1,100 +1,225 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Brit",
-            "email": "brit@brit.com",
-            "isAdmin": true
-        }
-    ],
-    "months": [
-        {
-            "id": 1,
-            "name": "January"
-        },
-        {
-            "id": 2,
-            "name": "February"
-        },
-        {
-            "id": 3,
-            "name": "March"
-        },
-        {
-            "id": 4,
-            "name": "April"
-        },
-        {
-            "id": 5,
-            "name": "May"
-        },
-        {
-            "id": 6,
-            "name": "June"
-        },
-        {
-            "id": 7,
-            "name": "July"
-        },
-        {
-            "id": 8,
-            "name": "August"
-        },
-        {
-            "id": 9,
-            "name": "September"
-        },
-        {
-            "id": 10,
-            "name": "October"
-        },
-        {
-            "id": 11,
-            "name": "November"
-        },
-        {
-            "id": 12,
-            "name": "December"
-        }
-    ],
-    "features": [
-        {
-            "id": 1,
-            "name": "History",
-            "trailId": [2,5,22,40,41,53]
-        },
-        {
-            "id": 2,
-            "name": "Views",
-            "trailId": [3,10,11,12,15,37,50,51,58,70]
-        },
-        {
-            "id": 3,
-            "name": "Lake Views",
-            "trailId": [23]
-        },
-        {
-            "id": 4,
-            "name": "Wildflowers",
-            "trailId": [10,12,14,15,18,20,30,31,36,42,58,61,62,64]
-        },
-        {
-            "id": 5,
-            "name": "Old Growth Forest",
-            "trailId": [2,17,25,26,28,45,49,55,57]
-        },
-        {
-            "id": 6,
-            "name": "Quiet Forest",
-            "trailId": [40]
-        },
-        {
-            "id": 7,
-            "name": "Waterfalls",
-            "trailId": [1,7,9,10,17,20,21,27,29,32,34,41,47,48,55,56,57,72]
-        }
-    ],
-    "trails": [
+  "users": [
+    {
+      "email": "brit@brit.com",
+      "name": "Brit",
+      "id": 1
+    },
+    {
+      "email": "WhitKnees@whit.com",
+      "name": "Whitney",
+      "id": 2
+    },
+    {
+      "email": "OhMyJosh@Josh.com",
+      "name": "Josh",
+      "id": 3
+    }
+  ],
+  "hikePlans": [
+    {
+      "trailId": 2,
+      "title": "Hike so Bright we Gotta wear Shades",
+      "userId": 1,
+      "monthId": 9,
+      "dateCreated": "2025-05-15T14:35:49.026Z",
+      "id": 1
+    },
+    {
+      "trailId": 5,
+      "title": "Cabeen There Done That",
+      "userId": 2,
+      "monthId": 11,
+      "dateCreated": "2025-05-15T17:44:45.649Z",
+      "id": 2
+    },
+    {
+      "trailId": 9,
+      "title": "Beeg Creek",
+      "userId": 1,
+      "monthId": 9,
+      "dateCreated": "2025-05-15T18:08:13.989Z",
+      "id": 3
+    },
+    {
+      "trailId": 6,
+      "title": "Balsam wit da bois",
+      "userId": 2,
+      "monthId": 10,
+      "dateCreated": "2025-05-15T18:20:56.258Z",
+      "id": 4
+    },
+    {
+      "trailId": 7,
+      "title": "Rad Hike",
+      "userId": 3,
+      "monthId": 8,
+      "dateCreated": "2025-05-15T18:47:57.940Z",
+      "id": 5
+    },
+    {
+      "trailId": 15,
+      "title": "Glower hike",
+      "userId": 3,
+      "monthId": 4,
+      "dateCreated": "2025-05-15T18:54:34.588Z",
+      "id": 6
+    }
+  ],
+  "months": [
+    {
+      "id": 1,
+      "name": "January"
+    },
+    {
+      "id": 2,
+      "name": "February"
+    },
+    {
+      "id": 3,
+      "name": "March"
+    },
+    {
+      "id": 4,
+      "name": "April"
+    },
+    {
+      "id": 5,
+      "name": "May"
+    },
+    {
+      "id": 6,
+      "name": "June"
+    },
+    {
+      "id": 7,
+      "name": "July"
+    },
+    {
+      "id": 8,
+      "name": "August"
+    },
+    {
+      "id": 9,
+      "name": "September"
+    },
+    {
+      "id": 10,
+      "name": "October"
+    },
+    {
+      "id": 11,
+      "name": "November"
+    },
+    {
+      "id": 12,
+      "name": "December"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "History",
+      "trailId": [
+        2,
+        5,
+        22,
+        40,
+        41,
+        53
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Views",
+      "trailId": [
+        3,
+        10,
+        11,
+        12,
+        15,
+        37,
+        50,
+        51,
+        58,
+        70
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lake Views",
+      "trailId": [
+        23
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wildflowers",
+      "trailId": [
+        10,
+        12,
+        14,
+        15,
+        18,
+        20,
+        30,
+        31,
+        36,
+        42,
+        58,
+        61,
+        62,
+        64
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Old Growth Forest",
+      "trailId": [
+        2,
+        17,
+        25,
+        26,
+        28,
+        45,
+        49,
+        55,
+        57
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Quiet Forest",
+      "trailId": [
+        40
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Waterfalls",
+      "trailId": [
+        1,
+        7,
+        9,
+        10,
+        17,
+        20,
+        21,
+        27,
+        29,
+        32,
+        34,
+        41,
+        47,
+        48,
+        55,
+        56,
+        57,
+        72
+      ]
+    }
+  ],
+  "trails": [
     {
       "id": 1,
       "name": "Abrams Falls",
@@ -153,7 +278,7 @@
       "features": [
         1
       ],
-      "distance_miles": 2.0,
+      "distance_miles": 2,
       "elevation_gain_ft": 505,
       "difficulty_score": 3.01,
       "dogFriendly": false,
@@ -177,7 +302,7 @@
       "features": [
         7
       ],
-      "distance_miles": 3.0,
+      "distance_miles": 3,
       "elevation_gain_ft": 953,
       "difficulty_score": 4.91,
       "dogFriendly": false,
@@ -243,7 +368,7 @@
         2,
         4
       ],
-      "distance_miles": 10.0,
+      "distance_miles": 10,
       "elevation_gain_ft": 1250,
       "difficulty_score": 12.5,
       "dogFriendly": false,
@@ -474,7 +599,7 @@
       "features": [
         4
       ],
-      "distance_miles": 10.0,
+      "distance_miles": 10,
       "elevation_gain_ft": 1080,
       "difficulty_score": 12.16,
       "dogFriendly": false,

@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react"
-import "./HikeForm.css"
+import "./ChooseTrail.css"
 import { getFeatures, getTrails } from "../../Services/TrailService"
 import { useNavigate } from "react-router-dom"
-import { getMonths } from "../../Services/HikePlanService"
 
-export const HikeForm = () => {
+export const ChooseTrail = () => {
 
     const [hikeFormChoices, setHikeFormChoices] = useState({
-        month: "",
+        trailId: 0,
         hikeExperience: 0,
         hikeLengthMax: 0,
         hikeLengthMin: 0,
@@ -17,16 +16,20 @@ export const HikeForm = () => {
         hikeFeatures: []
     })
 
+    // const [hikePlan, setHikePlan] = useState({
+    //     hikePlanId: hikePlanId,
+    //     trailId:0
+    // })
+
     const [trails, setTrails] = useState([])
     const [filteredTrails, setFilteredTrails] = useState([])
     const [features, setFeatures] = useState([])
     const [selectedFeatures, setSelectedFeatures] = useState([])
-    const [months, setMonths] = useState([])
+
 
     useEffect(() => {
         getTrails().then(setTrails)
         getFeatures().then((res) => setFeatures(res))
-        getMonths().then((res) => setMonths(res))
     }, [])
 
 
@@ -35,8 +38,24 @@ export const HikeForm = () => {
 
         let filtered = [...trails]
 
+        if (hikeFormChoices.hikeExperience === 1) {
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score <= 5 )
+        }
+        if (hikeFormChoices.hikeExperience === 2) {
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 5 && trail.difficulty_score <= 10 )
+        }
+        if (hikeFormChoices.hikeExperience === 3) {
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 10 && trail.difficulty_score <= 15 )
+        }
+        if (hikeFormChoices.hikeExperience === 4) {
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 15 && trail.difficulty_score <= 25  )
+        }
+        if (hikeFormChoices.hikeExperience === 5) {
+            filtered = filtered.filter(trail => trail.difficulty_score )
+        }
+
         if (hikeFormChoices.mobilityAccessibility) {
-            filtered = filtered.filter(trail => trail.mobilityAccessibility)
+            filtered = filtered.filter(trail => trail .mobilityAccessibility)
         }
 
         if (hikeFormChoices.bringingDogs) {
@@ -49,31 +68,22 @@ export const HikeForm = () => {
             )
         }
 
-        if(hikeFormChoices.hikeLengthMin) {
-            filtered = filtered.filter( trail => trail.distance_miles != null && trail.distance_miles >= hikeFormChoices.hikeLengthMin)
+        if (hikeFormChoices.hikeLengthMin) {
+            filtered = filtered.filter(trail => trail.distance_miles != null && trail.distance_miles >= hikeFormChoices.hikeLengthMin)
         }
 
-        if(hikeFormChoices.hikeLengthMax) {
-            filtered = filtered.filter( trail => trail.distance_miles != null && trail.distance_miles <= hikeFormChoices.hikeLengthMax)
+        if (hikeFormChoices.hikeLengthMax) {
+            filtered = filtered.filter(trail => trail.distance_miles != null && trail.distance_miles <= hikeFormChoices.hikeLengthMax)
         }
 
-        if(hikeFormChoices.hikeElvGain) {
+        if (hikeFormChoices.hikeElvGain) {
             filtered = filtered.filter(trail => trail.elevation_gain_ft != null && trail.elevation_gain_ft <= hikeFormChoices.hikeElvGain)
         }
-        
+
         setFilteredTrails(filtered)
     }, [trails, hikeFormChoices, selectedFeatures])
 
     const navigate = useNavigate()
-
-
-    const handleSelection = (event) => {
-        setHikeFormChoices((prev) => ({
-            ...prev,
-            month: parseInt(event.target.value),
-        }))
-    }
-
 
     const handleFeatures = (event) => {
         const id = parseInt(event.target.value)
@@ -95,9 +105,9 @@ export const HikeForm = () => {
     }
 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event, trailId) => {
         event.preventDefault()
-        navigate(`/FilteredTrails`)
+        navigate(`/TrailDetails/${trailId}`)
     }
 
 
@@ -107,7 +117,7 @@ export const HikeForm = () => {
 
                 <div className="column">
                     <div className="hike-form-header">
-                    <h2>{filteredTrails.length} Available Trails</h2>
+                        <h2><span className="fancy-number">{filteredTrails.length}</span> Available Trails</h2>
                     </div>
                     <div className="filteredTrails">
                         <div className="trail-result">
@@ -117,9 +127,9 @@ export const HikeForm = () => {
                                     <p>{trail.distance_miles} miles</p>
                                     <p>Elevation gain: {trail.elevation_gain_ft} ft</p>
                                     <p>{trail.location}</p>
-                                    <p>{trail.features}</p>
                                     <button className="form-btn"
-                                        onClick={handleSubmit}>Select Trail</button>
+                                        value={trail.id}
+                                        onClick={(event) =>handleSubmit(event, trail.id)}>Select Trail</button>
                                 </div>
                             ))}
                         </div>
@@ -131,31 +141,9 @@ export const HikeForm = () => {
                         <h2>Plan Your Hike</h2>
                     </div>
                     <div className="plan-hike">
-                        <div className="drop-down">
-                            <h3>What month is your hike going to be in?</h3>
-                            <article className="dropdown">
-                                <select
-                                    id="month-selector"
-                                    name="month"
-                                    value={hikeFormChoices.month}
-                                    onChange={handleSelection}
-                                    required
-                                ><option disabled value="">
-                                        Choose Month
-                                    </option>
-                                    {months.map((month) => {
-                                        return (
-                                            <option value={month.id} key={month.id}>
-                                                {month.name}
-                                            </option>
-                                        )
-                                    })}
-                                </select>
-                            </article>
-                        </div>
 
                         <div className="form-group">
-                            <h3>Hiking Experience Required</h3>
+                            <h3>Trail Difficulty</h3>
                             <label>
                                 <input className="difficulty-checkbox"
                                     type="radio" value="1" name="hikingExperience"
@@ -167,7 +155,7 @@ export const HikeForm = () => {
                                         }))
                                     }
                                 />{" "}
-                                None
+                                Less Experience
                             </label>
                             <label>
                                 <input className="difficulty-checkbox"
@@ -180,7 +168,7 @@ export const HikeForm = () => {
                                         }))
                                     }
                                 />{" "}
-                                Some
+                                Some Experience
                             </label>
                             <label>
                                 <input className="difficulty-checkbox"
@@ -207,59 +195,22 @@ export const HikeForm = () => {
                                 />{" "}
                                 Expert
                             </label>
+                            <label>
+                                <input className="difficulty-checkbox"
+                                    type="radio" value="5" name="hikingExperience"
+                                    checked={hikeFormChoices.hikeExperience === 5}
+                                    onChange={(event) =>
+                                        setHikeFormChoices((prev) => ({
+                                            ...prev,
+                                            hikeExperience: parseInt(event.target.value),
+                                        }))
+                                    }
+                                />{" "}
+                               All Levels
+                            </label>
                         </div>
 
-                        <div className="form-group">
-                            <h3>Minimum Length</h3>
-                            <input
-                                type="range"
-                                id="hike-length"
-                                min="0"
-                                max="16"
-                                value={hikeFormChoices.hikeLengthMin}
-                                onChange={(event) => {
-                                    setHikeFormChoices(prev => ({
-                                        ...prev,
-                                        hikeLengthMin: parseInt(event.target.value)
-                                    }))
-                                }}
-                            />
-                            <p><output id="value">{hikeFormChoices.hikeLengthMin}</output> Miles</p>
-                        </div>
 
-                        <div className="form-group">
-                            <h3>Maximum Length</h3>
-                            <input
-                                type="range"
-                                id="hike-length"
-                                min="0"
-                                max="16"
-                                value={hikeFormChoices.hikeLengthMax}
-                                onChange={(event) => {
-                                    setHikeFormChoices(prev => ({
-                                        ...prev,
-                                        hikeLengthMax: parseInt(event.target.value)
-                                    }))
-                                }}
-                            />
-                            <p><output id="value">{hikeFormChoices.hikeLengthMax}</output> Miles</p>
-                        </div>
-
-                        <div className="form-group">
-                            <h3>Maximum elevation gain</h3>
-                            <input type="range"
-                                id="elevation-gain"
-                                min="0"
-                                max="4200"
-                                value={hikeFormChoices.hikeElvGain}
-                                onChange={(event) => {
-                                    setHikeFormChoices(prev => ({
-                                        ...prev,
-                                        hikeElvGain: parseInt(event.target.value)
-                                    }))
-                                }} />
-                            <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
-                        </div>
 
                         <div className="form-group">
                             <h3>Are you bringing dogs?</h3>
@@ -325,6 +276,58 @@ export const HikeForm = () => {
                                     </label>
                                 </div>
                             ))}
+                        </div>
+                        <div className="form-group">
+                            <h3>Maximum Length</h3>
+                            <input
+                                type="range"
+                                id="hike-length"
+                                min="0"
+                                max="16"
+                                value={hikeFormChoices.hikeLengthMax}
+                                onChange={(event) => {
+                                    setHikeFormChoices(prev => ({
+                                        ...prev,
+                                        hikeLengthMax: parseInt(event.target.value)
+                                    }))
+                                }}
+                            />
+                            <p><output id="value">{hikeFormChoices.hikeLengthMax}</output> Miles</p>
+                        </div>
+
+                        <div className="form-group">
+                            <h3>Minimum Length</h3>
+                            <input
+                                type="range"
+                                id="hike-length"
+                                min="0"
+                                max="16"
+                                value={hikeFormChoices.hikeLengthMin}
+                                onChange={(event) => {
+                                    setHikeFormChoices(prev => ({
+                                        ...prev,
+                                        hikeLengthMin: parseInt(event.target.value)
+                                    }))
+                                }}
+                            />
+                            <p><output id="value">{hikeFormChoices.hikeLengthMin}</output> Miles</p>
+                        </div>
+
+
+                        <div className="form-group">
+                            <h3>Maximum elevation gain</h3>
+                            <input type="range"
+                                id="elevation-gain"
+                                min="0"
+                                max="4200"
+                                value={hikeFormChoices.hikeElvGain}
+                                onChange={(event) => {
+                                    setHikeFormChoices(prev => ({
+                                        ...prev,
+                                        hikeElvGain: parseInt(event.target.value)
+                                    }))
+                                }} />
+                            <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
                         </div>
                     </div>
                 </div>
