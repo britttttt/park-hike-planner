@@ -17,54 +17,7 @@
     }
   ],
   "hikePlans": [
-    {
-      "trailId": 2,
-      "title": "Hike so Bright we Gotta wear Shades",
-      "userId": 1,
-      "monthId": 9,
-      "dateCreated": "2025-05-15T14:35:49.026Z",
-      "id": 1
-    },
-    {
-      "trailId": 5,
-      "title": "Cabeen There Done That",
-      "userId": 2,
-      "monthId": 11,
-      "dateCreated": "2025-05-15T17:44:45.649Z",
-      "id": 2
-    },
-    {
-      "trailId": 9,
-      "title": "Beeg Creek",
-      "userId": 1,
-      "monthId": 9,
-      "dateCreated": "2025-05-15T18:08:13.989Z",
-      "id": 3
-    },
-    {
-      "trailId": 6,
-      "title": "Balsam wit da bois",
-      "userId": 2,
-      "monthId": 10,
-      "dateCreated": "2025-05-15T18:20:56.258Z",
-      "id": 4
-    },
-    {
-      "trailId": 7,
-      "title": "Rad Hike",
-      "userId": 3,
-      "monthId": 8,
-      "dateCreated": "2025-05-15T18:47:57.940Z",
-      "id": 5
-    },
-    {
-      "trailId": 15,
-      "title": "Glower hike",
-      "userId": 3,
-      "monthId": 4,
-      "dateCreated": "2025-05-15T18:54:34.588Z",
-      "id": 6
-    }
+
   ],
   "months": [
     {
@@ -219,6 +172,18 @@
       ]
     }
   ],
+  "trailType": [
+    {
+    "id": 1,
+    "type":"Loop"
+  },
+    {
+    "id": 2,
+    "type":"Overnight-Loop"
+  }
+
+
+],
   "trails": [
     {
       "id": 1,
@@ -231,7 +196,9 @@
       "elevation_gain_ft": 675,
       "difficulty_score": 6.55,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6024,
+      "lng": -83.7766
     },
     {
       "id": 2,
@@ -245,7 +212,9 @@
       "elevation_gain_ft": 1475,
       "difficulty_score": 9.65,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat":35.7571,
+      "lng": -83.3689
     },
     {
       "id": 3,
@@ -258,7 +227,8 @@
       "elevation_gain_ft": 1125,
       "difficulty_score": 6.65,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "lat": 35.6296,
+      "lng":  -83.4514
     },
     {
       "id": 4,
@@ -269,7 +239,9 @@
       "elevation_gain_ft": 3.5,
       "difficulty_score": 5.3,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.5568,
+      "lng":  -83.4961
     },
     {
       "id": 5,
@@ -282,7 +254,9 @@
       "elevation_gain_ft": 505,
       "difficulty_score": 3.01,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6373,
+      "lng":  -83.5848
     },
     {
       "id": 6,
@@ -293,7 +267,9 @@
       "elevation_gain_ft": 2535,
       "difficulty_score": 12.67,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.5870,
+      "lng":  -83.1410
     },
     {
       "id": 7,
@@ -306,7 +282,9 @@
       "elevation_gain_ft": 953,
       "difficulty_score": 4.91,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6783,
+      "lng":  -83.4872
     },
     {
       "id": 8,
@@ -317,7 +295,9 @@
       "elevation_gain_ft": null,
       "difficulty_score": null,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": null,
+      "lng": null
     },
     {
       "id": 9,
@@ -330,7 +310,9 @@
       "elevation_gain_ft": 605,
       "difficulty_score": 5.41,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.7517,
+      "lng": -83.1114
     },
     {
       "id": 10,
@@ -345,7 +327,9 @@
       "elevation_gain_ft": 1745,
       "difficulty_score": 10.29,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.68048329303872, 
+      "lng": -83.46238708465658
     },
     {
       "id": 11,
@@ -358,7 +342,9 @@
       "elevation_gain_ft": 1607,
       "difficulty_score": 9.11,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.67586113459498,
+      "lng":  -83.4852790421867
     },
     {
       "id": 12,
@@ -372,7 +358,9 @@
       "elevation_gain_ft": 1250,
       "difficulty_score": 12.5,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": null,
+      "lng":  null
     },
     {
       "id": 13,
@@ -383,9 +371,11 @@
       "elevation_gain_ft": 1640,
       "difficulty_score": 11.38,
       "dogFriendly": false,
-      "mobilityAccessibility": false
-    },
-    {
+      "mobilityAccessibility": false,
+      "lat": 35.610972858975224,
+      "lng": -83.42509402883584
+  },
+    { 
       "id": 14,
       "name": "Chasteen Creek Cascade",
       "location": "Cherokee / Deep Creek",
@@ -396,7 +386,9 @@
       "elevation_gain_ft": 340,
       "difficulty_score": 4.28,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat":35.563231669859505,
+      "lng":-83.31062182883585
     },
     {
       "id": 15,
@@ -410,7 +402,9 @@
       "elevation_gain_ft": 1486,
       "difficulty_score": 11.57,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat":35.66071562319872,
+      "lng":-83.70890927116413
     },
     {
       "id": 16,
@@ -421,7 +415,9 @@
       "elevation_gain_ft": 1487,
       "difficulty_score": 6.27,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.63541886181253,
+      "lng": -83.46961005555573
     },
     {
       "id": 17,
@@ -435,7 +431,9 @@
       "elevation_gain_ft": 1776,
       "difficulty_score": 11.25,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.68825055948366,
+      "lng": -83.53851026628818
     },
     {
       "id": 18,
@@ -448,7 +446,9 @@
       "elevation_gain_ft": 830,
       "difficulty_score": 7.26,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.64012342932832,
+      "lng": -83.56551304747657
     },
     {
       "id": 19,
@@ -458,10 +458,10 @@
       "distance_miles": 6.4,
       "elevation_gain_ft": 1164,
       "difficulty_score": 8.73,
-      "lat": 35.67555601900059,
-      "lng": -83.64640885073038,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.67555601900059,
+      "lng":  -83.64640885073038
     },
     {
       "id": 20,
@@ -475,7 +475,9 @@
       "elevation_gain_ft": 579,
       "difficulty_score": 5.76,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.46496752422664,
+      "lng": -83.43367751611912
     },
     {
       "id": 21,
@@ -488,7 +490,9 @@
       "elevation_gain_ft": 600,
       "difficulty_score": 5.2,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.554131241038334,
+      "lng": -83.16403039186736
     },
     {
       "id": 22,
@@ -501,7 +505,9 @@
       "elevation_gain_ft": 235,
       "difficulty_score": 4.37,
       "dogFriendly": true,
-      "mobilityAccessibility": true
+      "mobilityAccessibility": true,
+      "lat": 35.706117925677624,
+      "lng":-83.52385156029062
     },
     {
       "id": 23,
@@ -514,7 +520,9 @@
       "elevation_gain_ft": 615,
       "difficulty_score": 4.33,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.460672653524064,
+      "lng": -83.54745608650755
     },
     {
       "id": 24,
@@ -525,7 +533,9 @@
       "elevation_gain_ft": 980,
       "difficulty_score": 7.76,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6968430129555,
+      "lng": -83.45991440783057
     },
     {
       "id": 25,
@@ -538,7 +548,9 @@
       "elevation_gain_ft": 3020,
       "difficulty_score": 17.34,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.564948465345424,
+      "lng":-83.84483349911264
     },
     {
       "id": 26,
@@ -551,7 +563,9 @@
       "elevation_gain_ft": 2300,
       "difficulty_score": 13.4,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat":35.543105590560856,
+      "lng": -83.89433956329208
     },
     {
       "id": 27,
@@ -564,7 +578,9 @@
       "elevation_gain_ft": 585,
       "difficulty_score": 3.77,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.68026629144316,
+      "lng": -83.4624228199175  
     },
     {
       "id": 28,
@@ -577,7 +593,9 @@
       "elevation_gain_ft": 2170,
       "difficulty_score": 18.04,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.56334401464286,
+      "lng": -83.16145616029519 
     },
     {
       "id": 29,
@@ -590,7 +608,9 @@
       "elevation_gain_ft": 900,
       "difficulty_score": 6.2,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.756833292115004,
+      "lng": -83.20819642927029
     },
     {
       "id": 30,
@@ -603,7 +623,9 @@
       "elevation_gain_ft": 1080,
       "difficulty_score": 12.16,
       "dogFriendly": false,
-      "mobilityAccessibility": true
+      "mobilityAccessibility": true,
+      "lat": 35.653719742135785, 
+      "lng": -83.58014781354065
     },
     {
       "id": 31,
@@ -616,7 +638,9 @@
       "elevation_gain_ft": 1270,
       "difficulty_score": 6.74,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.66347828434755,
+      "lng": -83.52637378465658 
     },
     {
       "id": 32,
@@ -629,7 +653,9 @@
       "elevation_gain_ft": 150,
       "difficulty_score": 2.2,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.47267715257572,
+      "lng": -83.42605040680422
     },
     {
       "id": 33,
@@ -640,7 +666,9 @@
       "elevation_gain_ft": 955,
       "difficulty_score": 6.11,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.47282854887287, 
+      "lng": -83.4257802123535
     },
     {
       "id": 34,
@@ -653,7 +681,9 @@
       "elevation_gain_ft": 314,
       "difficulty_score": 2.93,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.67210218331858,
+      "lng": -83.58049519118056
     },
     {
       "id": 35,
@@ -664,7 +694,9 @@
       "elevation_gain_ft": 285,
       "difficulty_score": 3.17,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.683768203470116, 
+      "lng": -83.63946686629114 
     },
     {
       "id": 36,
@@ -677,7 +709,9 @@
       "elevation_gain_ft": 412,
       "difficulty_score": 5.72,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.65380453753214, 
+      "lng": -83.58018367116372
     },
     {
       "id": 37,
@@ -690,7 +724,9 @@
       "elevation_gain_ft": 2300,
       "difficulty_score": 11.3,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.48606863456392,
+      "lng": -83.45896739497863
     },
     {
       "id": 38,
@@ -701,7 +737,9 @@
       "elevation_gain_ft": 1524,
       "difficulty_score": 11.15,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6409908861611, 
+      "lng": -83.68909550017923 
     },
     {
       "id": 39,
@@ -712,7 +750,9 @@
       "elevation_gain_ft": 1380,
       "difficulty_score": 9.76,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.66946000016997, 
+      "lng": -83.66194787892485 
     },
     {
       "id": 40,
@@ -726,7 +766,9 @@
       "elevation_gain_ft": 661,
       "difficulty_score": 5.92,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.64336677249897, 
+      "lng": -83.5835956357304  
     },
     {
       "id": 41,
@@ -740,7 +782,9 @@
       "elevation_gain_ft": 1140,
       "difficulty_score": 10.58,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.61805615400635,
+      "lng": -83.66974938887698 
     },
     {
       "id": 42,
@@ -753,7 +797,9 @@
       "elevation_gain_ft": 1515,
       "difficulty_score": 8.83,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.52085737757483,
+      "lng": -83.30950763057957
     },
     {
       "id": 43,
@@ -764,7 +810,9 @@
       "elevation_gain_ft": null,
       "difficulty_score": null,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": null,
+      "lng":  null
     },
     {
       "id": 44,
@@ -775,7 +823,9 @@
       "elevation_gain_ft": 3045,
       "difficulty_score": 17.19,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.75217701755348,
+      "lng": -83.20410942454737 
     },
     {
       "id": 45,
@@ -788,7 +838,9 @@
       "elevation_gain_ft": 3000,
       "difficulty_score": 21.6,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.62882580324922, 
+      "lng":  -83.38917669919822
     },
     {
       "id": 46,
@@ -799,7 +851,9 @@
       "elevation_gain_ft": 3993,
       "difficulty_score": 22.39,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.67398289801009, 
+      "lng": -83.49320855754844 
     },
     {
       "id": 47,
@@ -812,7 +866,9 @@
       "elevation_gain_ft": 3993,
       "difficulty_score": 21.79,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.67585279915401,
+      "lng": -83.48526678395656
     },
     {
       "id": 48,
@@ -825,7 +881,9 @@
       "elevation_gain_ft": 3401,
       "difficulty_score": 20.7,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.680222598332186, 
+      "lng": -83.46243563681062 
     },
     {
       "id": 49,
@@ -838,7 +896,9 @@
       "elevation_gain_ft": 4200,
       "difficulty_score": 20.6,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.75127757783181, 
+      "lng": -83.10935661196086
     },
     {
       "id": 50,
@@ -851,7 +911,9 @@
       "elevation_gain_ft": 2800,
       "difficulty_score": 15.6,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.55294093396846, 
+      "lng": -83.30981985807968 
     },
     {
       "id": 51,
@@ -864,7 +926,9 @@
       "elevation_gain_ft": 1679,
       "difficulty_score": 10.56,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.567864418570664, 
+      "lng":  -83.47955267251936
     },
     {
       "id": 52,
@@ -875,7 +939,9 @@
       "elevation_gain_ft": 70,
       "difficulty_score": 3.14,
       "dogFriendly": true,
-      "mobilityAccessibility": true
+      "mobilityAccessibility": true,
+      "lat": 35.500437707519886,
+      "lng":  -83.30352104049919
     },
     {
       "id": 53,
@@ -888,7 +954,9 @@
       "elevation_gain_ft": 90,
       "difficulty_score": 0.98,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.6834976781236,
+      "lng":  -83.49021127703594
     },
     {
       "id": 54,
@@ -899,7 +967,9 @@
       "elevation_gain_ft": 1650,
       "difficulty_score": 12.1,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.73451664409711, 
+      "lng": -83.36968076774973  
     },
     {
       "id": 55,
@@ -913,7 +983,9 @@
       "elevation_gain_ft": 699,
       "difficulty_score": 5.4,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.69700611778206,
+      "lng":  -83.38766494412425
     },
     {
       "id": 56,
@@ -926,7 +998,9 @@
       "elevation_gain_ft": 1685,
       "difficulty_score": 8.77,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.675747482926106, 
+      "lng": -83.48563819202923
     },
     {
       "id": 57,
@@ -940,7 +1014,9 @@
       "elevation_gain_ft": 2190,
       "difficulty_score": 12.38,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.70275214839833, 
+      "lng": -83.3575651165883
     },
     {
       "id": 58,
@@ -954,7 +1030,9 @@
       "elevation_gain_ft": 1736,
       "difficulty_score": 1736,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.607105196708254,
+      "lng":  -83.77761959815346
     },
     {
       "id": 59,
@@ -965,7 +1043,9 @@
       "elevation_gain_ft": 3665,
       "difficulty_score": 21.23,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.602249193995625, 
+      "lng":  -83.76624800386145
     },
     {
       "id": 60,
@@ -976,7 +1056,9 @@
       "elevation_gain_ft": 600,
       "difficulty_score": 6.4,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.616434505752416,
+      "lng": -83.12033515818688
     },
     {
       "id": 61,
@@ -989,7 +1071,9 @@
       "elevation_gain_ft": 513,
       "difficulty_score": 4.83,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.61645192202434,
+      "lng": -83.12018495700217
     },
     {
       "id": 62,
@@ -1002,7 +1086,9 @@
       "elevation_gain_ft": 513,
       "difficulty_score": 4.83,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.62746340631562,
+      "lng": -83.72578470582769
     },
     {
       "id": 63,
@@ -1013,7 +1099,9 @@
       "elevation_gain_ft": 2152,
       "difficulty_score": 13.6,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.55694511487979, 
+      "lng":  -83.49627785805127
     },
     {
       "id": 64,
@@ -1026,7 +1114,9 @@
       "elevation_gain_ft": 1441,
       "difficulty_score": 9.38,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.55597278542335,
+      "lng":  -83.3120402195627
     },
     {
       "id": 65,
@@ -1037,7 +1127,9 @@
       "elevation_gain_ft": 2842,
       "difficulty_score": 15.98,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.605086939063256, 
+      "lng":  -83.77016048009631
     },
     {
       "id": 66,
@@ -1048,7 +1140,9 @@
       "elevation_gain_ft": 3100,
       "difficulty_score": 15.6,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.60504661364004, 
+      "lng":  -83.77007094949704
     },
     {
       "id": 67,
@@ -1059,7 +1153,9 @@
       "elevation_gain_ft": 3050,
       "difficulty_score": 19.4,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.602062950611725, 
+      "lng": -83.76617631229576
     },
     {
       "id": 68,
@@ -1070,7 +1166,9 @@
       "elevation_gain_ft": 25,
       "difficulty_score": 0.4,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.59571445820414,
+      "lng":  -83.45806567234791
     },
     {
       "id": 69,
@@ -1081,7 +1179,9 @@
       "elevation_gain_ft": 460,
       "difficulty_score": 2.32,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.595586292805706, 
+      "lng":  -83.45864906559497
     },
     {
       "id": 70,
@@ -1094,7 +1194,9 @@
       "elevation_gain_ft": 1090,
       "difficulty_score": 9.18,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.671779651490276,
+      "lng": -83.58019504234697
     },
     {
       "id": 71,
@@ -1105,7 +1207,9 @@
       "elevation_gain_ft": 1500,
       "difficulty_score": 9,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.671779651490276, 
+      "lng": -83.58019504234697
     },
     {
       "id": 72,
@@ -1118,7 +1222,9 @@
       "elevation_gain_ft": 47,
       "difficulty_score": 0.69,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.59042878692776, 
+      "lng":  -83.46940958307346
     },
     {
       "id": 73,
@@ -1129,7 +1235,9 @@
       "elevation_gain_ft": 1375,
       "difficulty_score": 8.15,
       "dogFriendly": false,
-      "mobilityAccessibility": false
+      "mobilityAccessibility": false,
+      "lat": 35.64184801722253, 
+      "lng": -83.69115098432654
     }
   ]
 }

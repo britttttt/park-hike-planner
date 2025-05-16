@@ -1,4 +1,7 @@
-.main-container {
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.my-hike-plans {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +11,50 @@
   padding: 3em;
 }
 
+.my-hike-plans h2{
+  font-family: "Kiwi Maru", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em;
+  
+}
 
-.center-container-btn {
+.hike-plan-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.hike-plan-item {
+  display: flex;
+  background-color: rgb(211, 193, 145);
+  width: 40em;
+  padding: 20px;
+  border: 1px solid rgb(107, 87, 48);
+  border-radius: 20px;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
-  margin-top: 3rem;
-  margin-bottom: 3em;
+  margin: 20px;
+}
+
+.hike-title {
+ color: #1d8f58;
+ 
+}
+
+.hike-plan-item h4 {
+ color: #1d8f58;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }

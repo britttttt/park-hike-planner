@@ -35,7 +35,7 @@ export const MyHikes = ({ currentUser }) => {
                 <div className="hike-plan-list">
                     {hikePlans.map((plan) => (
                         <div key={plan.id} className="hike-plan-item">
-                            <h3>{plan.title || "Untitled Plan"}</h3>
+                            <h3 className="hike-title">{plan.title || "Untitled Plan"}</h3>
                             <p>
                                 Planned Month: {months.find((month) => month.id === plan.monthId)?.name || "Unknown"}
                             </p>
