@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import "./ChooseTrail.css"
-import { getFeatures, getTrails } from "../../Services/TrailService"
+import { getFeatures, getTrails, getTrailsWithFeatures } from "../../Services/TrailService"
 import { useNavigate } from "react-router-dom"
 
 export const ChooseTrail = () => {
@@ -16,15 +16,23 @@ export const ChooseTrail = () => {
         hikeFeatures: []
     })
 
-    // const [hikePlan, setHikePlan] = useState({
-    //     hikePlanId: hikePlanId,
-    //     trailId:0
-    // })
-
     const [trails, setTrails] = useState([])
     const [filteredTrails, setFilteredTrails] = useState([])
     const [features, setFeatures] = useState([])
     const [selectedFeatures, setSelectedFeatures] = useState([])
+    const pathRef = useRef(null);
+    const [pathLength, setPathLength] = useState(0)
+
+    useEffect(() => {
+        if (pathRef.current) {
+            setPathLength(pathRef.current.getTotalLength())
+        }
+    }, [])
+
+
+    useEffect(() => {
+        getTrailsWithFeatures().then(setTrails)
+    }, [])
 
 
     useEffect(() => {
@@ -39,23 +47,23 @@ export const ChooseTrail = () => {
         let filtered = [...trails]
 
         if (hikeFormChoices.hikeExperience === 1) {
-            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score <= 5 )
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score <= 5)
         }
         if (hikeFormChoices.hikeExperience === 2) {
-            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 5 && trail.difficulty_score <= 10 )
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 5 && trail.difficulty_score <= 10)
         }
         if (hikeFormChoices.hikeExperience === 3) {
-            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 10 && trail.difficulty_score <= 15 )
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 10 && trail.difficulty_score <= 15)
         }
         if (hikeFormChoices.hikeExperience === 4) {
-            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 15 && trail.difficulty_score <= 25  )
+            filtered = filtered.filter(trail => trail.difficulty_score != null && trail.difficulty_score > 15 && trail.difficulty_score <= 25)
         }
         if (hikeFormChoices.hikeExperience === 5) {
-            filtered = filtered.filter(trail => trail.difficulty_score )
+            filtered = filtered.filter(trail => trail.difficulty_score)
         }
 
         if (hikeFormChoices.mobilityAccessibility) {
-            filtered = filtered.filter(trail => trail .mobilityAccessibility)
+            filtered = filtered.filter(trail => trail.mobilityAccessibility)
         }
 
         if (hikeFormChoices.bringingDogs) {
@@ -104,11 +112,23 @@ export const ChooseTrail = () => {
         })
     }
 
+    const handleElevationChange = (event) => {
+        const value = parseInt(event.target.value);
+        setHikeFormChoices(prev => ({
+            ...prev,
+            hikeElvGain: value
+        }))
+    }
+
+    const progress = hikeFormChoices.hikeElvGain / 4200;
+    const dashOffset = pathLength * (1 - progress)
+
 
     const handleSubmit = (event, trailId) => {
         event.preventDefault()
         navigate(`/TrailDetails/${trailId}`)
     }
+
 
 
     return (
@@ -129,7 +149,7 @@ export const ChooseTrail = () => {
                                     <p>{trail.location}</p>
                                     <button className="form-btn"
                                         value={trail.id}
-                                        onClick={(event) =>handleSubmit(event, trail.id)}>Select Trail</button>
+                                        onClick={(event) => handleSubmit(event, trail.id)}>Select Trail</button>
                                 </div>
                             ))}
                         </div>
@@ -206,7 +226,7 @@ export const ChooseTrail = () => {
                                         }))
                                     }
                                 />{" "}
-                               All Levels
+                                All Levels
                             </label>
                         </div>
 
@@ -281,7 +301,7 @@ export const ChooseTrail = () => {
                             <h3>Maximum Length</h3>
                             <input
                                 type="range"
-                                id="hike-length"
+                                id="hike-length-max"
                                 min="0"
                                 max="16"
                                 value={hikeFormChoices.hikeLengthMax}
@@ -299,7 +319,7 @@ export const ChooseTrail = () => {
                             <h3>Minimum Length</h3>
                             <input
                                 type="range"
-                                id="hike-length"
+                                id="hike-length-min"
                                 min="0"
                                 max="16"
                                 value={hikeFormChoices.hikeLengthMin}
@@ -313,26 +333,45 @@ export const ChooseTrail = () => {
                             <p><output id="value">{hikeFormChoices.hikeLengthMin}</output> Miles</p>
                         </div>
 
-
+                        <h3>Maximum elevation gain</h3>
+                        <div className="elevation-graph">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 558" preserveAspectRatio="none"
+                                style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '80%',
+                                    pointerEvents: 'none', // SVG doesn't block interactions
+                                }}>
+                                <path
+                                    ref={pathRef}
+                                    d="M 0 600 L 50 550 L 100 500 L 100 500 L 100 500 L 150 500 L 200 450 L 250 450 L 300 400 L 350 400 L 400 350 L 450 300 L 500 300 L 550 250 L 600 200 L 650 200 L 700 150 L 750 100 L 800 50 "
+                                    stroke="#1d8f58"
+                                    strokeWidth="5"
+                                    fill="none"
+                                    style={{
+                                        strokeDasharray: pathLength,
+                                        strokeDashoffset: dashOffset,
+                                        transition: 'stroke-dashoffset 0.3s ease'
+                                    }}
+                                />
+                            </svg>
+                        </div>
+                      
                         <div className="form-group">
-                            <h3>Maximum elevation gain</h3>
                             <input type="range"
                                 id="elevation-gain"
                                 min="0"
                                 max="4200"
                                 value={hikeFormChoices.hikeElvGain}
-                                onChange={(event) => {
-                                    setHikeFormChoices(prev => ({
-                                        ...prev,
-                                        hikeElvGain: parseInt(event.target.value)
-                                    }))
-                                }} />
+                                onChange={handleElevationChange} />
                             <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     )
 }

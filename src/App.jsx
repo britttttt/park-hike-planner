@@ -7,6 +7,7 @@ import { Register } from "/auth/Register";
 
 
 export const App = () => {
+
   return (
     <Routes>
       <Route path="/Login" element={<Login />} />

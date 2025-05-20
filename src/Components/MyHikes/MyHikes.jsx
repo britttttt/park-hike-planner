@@ -3,27 +3,43 @@ import "./MyHikes.css"
 import { useEffect, useState } from "react"
 import { getHikePlansByUserId } from "../../Services/HikePlanService"
 import { getMonths } from "../../Services/HikePlanService"
+// import { GetNPSAlerts } from "../../Services/ApiServices"
+
+
 
 export const MyHikes = ({ currentUser }) => {
     const [hikePlans, setHikePlans] = useState([])
     const navigate = useNavigate()
     const [months, setMonths] = useState([])
 
+    // const [alert, setAlert] = useState([])
+    // const alerts = GetNPSAlerts()
+
+    
     useEffect(() => {
         getHikePlansByUserId(currentUser.id).then(setHikePlans)
     }, [currentUser.id])
+    
+    // useEffect(() => {
+    //     alerts(alert).then(setAlert) 
+    // }, [alert])
 
     useEffect(() => {
         getMonths().then(setMonths)
     }, [])
 
+
+
+
     return (
         <div className="my-hike-plans">
             <h2>My Hike Plans</h2>
-
+        
+            
             {hikePlans.length === 0 ? (
+
                 <div className="empty-hike-plans">
-                    <p>You don't have any hike plans yet.</p>
+                    <h3>You don't have any hike plans yet.</h3>
                     <button
                         className="create-hike-btn"
                         onClick={() => navigate("ChooseTrail")}
@@ -55,6 +71,15 @@ export const MyHikes = ({ currentUser }) => {
                     </div>
                 </div>
             )}
+            {/* <div>
+                 {alerts?.map((alert) => (
+                            <div key={alert.id} className="bird-entry">
+                                <p><strong>{alert.title}</strong></p>
+                            </div>
+                        ))}
+            </div> */}
+
+
 
         </div>
     )

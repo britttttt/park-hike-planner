@@ -13,9 +13,14 @@ export const createHikePlan = (plan) => {
     }).then(res => res.json()) 
 }
 
-export const getHikePlanById = (hikePlanId) => {
-    return fetch(`http://localhost:8088/hikePlans/${hikePlanId}`)
-        .then((res) => res.json())
+export const getHikePlanById = (id) => {
+  return fetch(`http://localhost:8088/hikePlans/${id}?_embed=features`)
+    .then(res => {
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return res.json();
+    });
 }
 
 
