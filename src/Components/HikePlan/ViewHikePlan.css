@@ -1,0 +1,79 @@
+.view-hike-plan {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 2em;
+}
+
+.hike-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.plan-your-hike {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.trail-details {
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: darkgreen;
+  padding: 2em;
+  margin: 1em;
+  min-width: 280px;
+  height: 100%;
+  flex: 1;
+}
+.trail-details h3 {
+  color: rgb(29, 36, 29);
+}
+
+.recent-birds {
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: darkgreen;
+  padding: 2em;
+  margin: 1em;
+  min-width: 280px;
+  flex: 1;
+}
+
+.recent-birds {
+  align-items: flex-start;
+}
+
+.bird-entry {
+  margin-bottom: 1em;
+  background-color: rgb(219, 191, 155);
+}
+
+.bird-link {
+  color: green;
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 2em;
+}
+
+.delete-button {
+  background-color: rgb(184, 17, 17);
+  color: white;
+}
+
+.plan-hike input {
+max-width: 57%;
+}

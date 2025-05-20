@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getHikePlanById, getMonths, saveHikePlan } from "../../Services/HikePlanService"
 import { useNavigate, useParams } from "react-router-dom"
 import { getTrailById } from "../../Services/TrailService"
-
+import "./HikePlan.css"
 
 export const CreateHikePlan = ({ currentUser }) => {
 
@@ -39,8 +39,11 @@ export const CreateHikePlan = ({ currentUser }) => {
         }
 
         const updateHikePlan = {
-            ...hikePlan,
+            id: hikePlan.id,
+            title: hikePlan.title,
+            monthId: hikePlan.monthId,
             userId: currentUser.id,
+            trailId: trail.id, 
             dateCreated: new Date().toISOString()
         }
 
@@ -49,7 +52,7 @@ export const CreateHikePlan = ({ currentUser }) => {
         })
     }
     return (
-        <div>
+        <div className="hike-details">
 
             <div className="hike-form-header">
                 <h2>Plan Your Hike</h2>
@@ -107,7 +110,7 @@ export const CreateHikePlan = ({ currentUser }) => {
                 </div>
 
 
-                <div>
+                <div className="save-btn">
                     <button onClick={handleSave}>
                         Save Hike
                     </button>

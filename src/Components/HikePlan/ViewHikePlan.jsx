@@ -2,12 +2,15 @@ import { useEffect, useState } from "react"
 import { deleteHikePlan, getHikePlanById, getMonths } from "../../Services/HikePlanService"
 import { useNavigate, useParams } from "react-router-dom"
 import { getTrailById } from "../../Services/TrailService"
+import "./ViewHikePlan.css"
+import { GetNearbyBirds } from "../../Services/ApiServices"
 
 
 export const ViewHikePlan = () => {
 
     const [trail, setTrail] = useState({})
     const [months, setMonths] = useState([])
+    const [birds, setBirds] = useState([])
     const [hikePlan, setHikePlan] = useState({
     })
 
@@ -18,7 +21,12 @@ export const ViewHikePlan = () => {
         if (hikePlanId) {
             getHikePlanById(parseInt(hikePlanId)).then((data) => {
                 setHikePlan(data)
-                getTrailById(data.trailId).then(setTrail)
+                getTrailById(data.trailId).then((trail) => {
+                    setTrail(trail)
+                    GetNearbyBirds(trail).then(birds => {
+                        setBirds(birds)
+                    })
+                })
             })
         } else if (trailId) {
             getTrailById(parseInt(trailId)).then(setTrail)
@@ -45,56 +53,74 @@ export const ViewHikePlan = () => {
 
 
 
-
-
     return (
 
-        <div>
+        <div className="view-hike-plan">
 
-            <div className="hike-form-header">
+            <div className="hike-header">
                 <h2>Plan Your Hike</h2>
             </div>
 
-            <div className="trail-details">
-
-            </div>
-
             <div className="plan-hike">
-                <div>
+                <div className="hike-plan-details">
                     <h2>{hikePlan.title}</h2>
-
-                    <div className="drop-down">
+                    <div className="planned-month">
                         <h4>
                             Planned Month: {
                                 months.find((month) => month.id === hikePlan.monthId)?.name || "Not set"
                             }
                         </h4>
-
                     </div>
-                    <h2>{trail.name} Hike</h2>
-                    <h4>{trail.location}</h4>
-                    <h4>{trail.distance_miles} miles</h4>
-                    <h4>{trail.elevation_gain_ft} ft elevation gain</h4>
-                    <h4>{trail.difficulty_score} difficulty score</h4>
                 </div>
 
+                <div className="layout-row">
+                    <div className="trail-details">
+                        <h2>{trail.name} Hike</h2>
+                        <h3>{trail.location}</h3>
+                        <h3>{trail.distance_miles} miles</h3>
+                        <h3>{trail.elevation_gain_ft} ft elevation gain</h3>
+                        <h3>{trail.difficulty_score} difficulty score</h3>
+                    </div>
 
-                <div>
-                    <button onClick={() => navigate(`/EditHikePlan/${hikePlan.id}/${trail.id}`)}>
-                        Edit Plan
-                    </button>
+                    <div className="recent-birds">
+                        <h3>Birds Seen Recently Near This Trail</h3>
+                        {birds.map((bird) => (
+                            <div key={bird.comName} className="bird-entry">
+                                <p><strong>{bird.comName}</strong></p>
+                                <p>{bird.locName}</p>
+                                <img
+                                    src={`https://source.unsplash.com/?${bird.comName}`}
+                                    alt={`A ${bird.comName}`}
+                                    className="bird-image"
+                                />
+                                <a
+                                    href={`https://ebird.org/species/${bird.speciesCode}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bird-link"
+                                >
+                                    View on eBird
+                                </a>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <div>
-                    <button onClick={handleDelete}
-                        name="delete">
-                        Delete Hike
-                    </button>
-                </div>
-
-
-
             </div>
+
+            <div className="button-group">
+                <button onClick={() => navigate(`/EditHikePlan/${hikePlan.id}/${trail.id}`)}>
+                    Edit Plan
+                </button>
+                <button
+                    className="delete-button"
+                    onClick={handleDelete}
+                    name="delete"
+                >
+                    Delete Hike
+                </button>
+            </div>
+
         </div>
+
     )
 }

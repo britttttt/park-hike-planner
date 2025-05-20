@@ -26,11 +26,14 @@
 }
 
 .plan-hike {
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
   scrollbar-width: none;
   border: 1px solid #0b8043;
   background-color: #2f5a45;
-  height: 40em;
+  overflow-y: auto;
+  max-height: 40em;
   width: 80%;
   padding: 20px;
 }
@@ -78,16 +81,101 @@
  color: #1d8f58;
 }
 
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+
+  /*  styling the track  */
+  height: .5em;
+  background: #c1fac4;
+  border-radius: 16px;
+  
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #749e25;
+  border-radius: 16px;
+
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+/* WebKit (Chrome, Safari, etc.) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 50px;
+  width: 50px;
+  background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/hikerbro.png?updatedAt=1747454153760");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+  transform: rotateZ(var(--thumb-rotate, 0deg));
+  margin-top: -17.5px; /* Optional tweak to vertically center on track */
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 50px;
+  width: 50px;
+  background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/hikerbro.png?updatedAt=1747454153760");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+  transform: rotateZ(var(--thumb-rotate, 0deg));
+}
+
+
+.elevation-graph {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3; 
+  background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/elevation%20bg.png?updatedAt=1747753420107");
+  background-size: cover;   
+  background-position: center;
+  margin-top: 1rem;
+}
+
+.elevation-graph svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 50%;
+  pointer-events: none; /* So clicks go through to slider if needed */
+}
+
+
 .row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
+  gap: 2rem;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
+  min-width: 0;
 }

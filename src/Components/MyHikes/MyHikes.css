@@ -11,7 +11,7 @@
   padding: 3em;
 }
 
-.my-hike-plans h2{
+.my-hike-plans h2 {
   font-family: "Kiwi Maru", serif;
   font-weight: 800;
   font-style: normal;
@@ -19,9 +19,17 @@
   
 }
 
+
+.empty-hike-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
 .hike-plan-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hike-plan-item {
@@ -45,6 +53,15 @@
  color: #1d8f58;
 }
 
+.new-hike-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(70, 60, 47);
+  width: 50%;
+  padding: 20px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -58,3 +75,5 @@
   flex-basis: 100%;
   flex: 1;
 }
+
+
