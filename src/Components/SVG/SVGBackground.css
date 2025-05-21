@@ -60,7 +60,7 @@
 }
 .landscape__image_1 {
 	position: relative;
-	bottom:-40%;
+	bottom:-25%;
 	left: 50%;
     right: 50%;
 	transform: translateX(-50%);

@@ -30,11 +30,7 @@ export const ApplicationViews = () => {
         element={
           <>
           <div className="SVG-background">
-              
               <AllSVGLayers/>
-              {/* <SVGLayer3 />
-              <SVGLayer2 />
-              <SVGLayer1 /> */}
           </div>
             <NavBar />
             <Outlet />
