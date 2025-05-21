@@ -1,22 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
 
 .my-hike-plans {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  margin-top: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
   padding: 3em;
 }
 
-.my-hike-plans h2 {
-  font-family: "Kiwi Maru", serif;
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Pacifico", cursive;
   font-weight: 800;
-  font-style: normal;
-  font-size: 3em;
-  
+  font-size: 2.5em;
+  background: linear-gradient(0deg, #473107 0%, #724410 100%);
+  border: solid 5px ;
+  border-radius: 1em;
+  width: 100%;
+  padding: .5em 2em;
+  color: white;
+  text-shadow: 2px 1px 20px rgb(82, 52, 14);
+  -webkit-text-stroke: 2px #412b1709;
+}
+
+.hero-header h4 {
+  justify-content: space-between;
+font-family: "Patrick Hand SC", cursive;
+  color: white;
+  text-shadow: 2px 1px 20px rgb(82, 52, 14);
+  -webkit-text-stroke: 2px #412b1709;
+}
+
+.header-btn {
+  font-size: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #1d8f58;
+  font-family: "Kiwi Maru", serif;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #157348;
 }
 
 
@@ -26,14 +63,39 @@
   align-items: center;
   gap: 3em;
 }
+
 .hike-plan-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* change from column to row */
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
 }
 
+.created-hikes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.new-hike-plan {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center; 
+  background-color: rgb(70, 60, 47);
+  max-height: 40em;
+  width: 25em;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
 .hike-plan-item {
   display: flex;
+  flex-direction: row;
+  flex-basis: 1;
   background-color: rgb(211, 193, 145);
   width: 40em;
   padding: 20px;
@@ -41,8 +103,11 @@
   border-radius: 20px;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
 }
+.hike-plan-item:hover {
+ background-color: rgb(189, 172, 126);
+}
+
 
 .hike-title {
  color: #1d8f58;
@@ -53,27 +118,7 @@
  color: #1d8f58;
 }
 
-.new-hike-plan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(70, 60, 47);
-  width: 50%;
-  padding: 20px;
-}
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
 
 
