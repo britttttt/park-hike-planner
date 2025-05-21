@@ -13,6 +13,11 @@
 	top: 0;
 	width: 100%;
     overflow: hidden;
+    transform: translateY(calc(var(--scrollPos, 0) * var(--offset, 0)));
+
+	@media (prefers-reduced-motion: reduce) {
+		transform: translateY(0);
+	}
 }
 
 
@@ -55,7 +60,7 @@
 }
 .landscape__image_1 {
 	position: relative;
-	bottom:-40%;
+	bottom:-25%;
 	left: 50%;
     right: 50%;
 	transform: translateX(-50%);
@@ -78,13 +83,9 @@
     overflow: clip;
 }
 
-/* .landscape__image svg {
-	display: block;
-	height: auto;
-	max-width: 100%;
-} */@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .landscape {
-    height: 20em; /* or reduce more depending on design */
+    height: 20em; 
     width: 60em;
   }
 
@@ -94,9 +95,8 @@
   .landscape__image_2,
   .landscape__image_1 {
    
-    max-width: 200%; /* scale down */
+    max-width: 200%; 
     min-width: 100%;
     width: 100%;
-   /* shrink layer slightly */
   }
 }
