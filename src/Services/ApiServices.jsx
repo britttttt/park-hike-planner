@@ -3,6 +3,7 @@ const eBirdapiKey = import.meta.env.VITE_EBIRD_API_KEY;
 const eBirdapiUrl = import.meta.env.VITE_EBIRD_API_URL;
 const NPSApiKey = import.meta.env.VITE_NPS_API_KEY;
 const NPSApiUrl = import.meta.env.VITE_NPS_API_URL;
+const NPSCampgroundsUrl =import.meta.env.VITE_NPS_CAMPGROUNDS_API_URL
 const NuthatchApiKey = import.meta.env.VITE_NUTHATCH_API_KEY;
 
 // const OpenMeteoUrl = import.meta.env.VITE_OPENMET_API_URL;
@@ -20,7 +21,6 @@ var requestOptions = {
   redirect: 'follow'
 
 };
-
 
 return fetch(`${eBirdapiUrl}lat=${trail.lat}&lng=${trail.lng}&back=30&dist=10`, requestOptions)
   .then(response => response.json())
@@ -40,6 +40,10 @@ export const GetNearbyBirdImage = (bird) => {
     headers: myHeaders,
     redirect: 'follow'
   };
+
+
+
+
 
   return fetch(`https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=25&name=${encodedName}&hasImg=true`, requestOptions)
     .then(response => {
@@ -66,5 +70,12 @@ export const GetNearbyBirdImage = (bird) => {
 export const GetNPSAlerts = () => {
 
     return fetch(`${NPSApiUrl}${NPSApiKey}`).then((res) => res.json())
+     .catch(error => console.log('error', error));
 
+}
+
+export const GetNPSCampgrounds = () => {
+
+  return fetch(`${NPSCampgroundsUrl}${NPSApiKey}`).then((res) => res.json())
+   .catch(error => console.log('error', error));
 }

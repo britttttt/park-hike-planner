@@ -233,7 +233,10 @@ export const ChooseTrail = () => {
 
 
                         <div className="form-group">
-                            <h3>Are you bringing dogs?</h3>
+                            <div class="tooltip"><h3>Are you bringing dogs?</h3>
+                                <span class="tooltiptext">Dogs are not allowed in backcountry trails in the Great Smoky Mountains. There are two dog-friendly trails</span>
+                                </div>
+
                             <label>
                                 <input className="dog-checkbox" type="radio" name="dog-checkbox"
                                     value={true}
@@ -358,8 +361,7 @@ export const ChooseTrail = () => {
                                 />
                             </svg>
                         </div>
-                      
-                        <div className="form-group">
+                        <div className="elevation-input">
                             <input type="range"
                                 id="elevation-gain"
                                 min="0"
@@ -368,6 +370,7 @@ export const ChooseTrail = () => {
                                 onChange={handleElevationChange} />
                             <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
                         </div>
+
                     </div>
                 </div>
             </div>

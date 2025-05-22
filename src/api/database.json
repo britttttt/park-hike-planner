@@ -19,27 +19,19 @@
   "hikePlans": [
     {
       "id": 1,
-      "title": "Get Rich or Hike Trying",
+      "title": "No Land for you",
       "monthId": 7,
       "userId": 1,
-      "trailId": 58,
-      "dateCreated": "2025-05-17T03:44:59.869Z"
+      "trailId": 51,
+      "dateCreated": "2025-05-21T20:29:40.880Z"
     },
     {
       "id": 2,
-      "title": "Alum Jackson",
-      "monthId": 3,
+      "title": "Whole Lotta Cove",
+      "monthId": 5,
       "userId": 1,
-      "trailId": 3,
-      "dateCreated": "2025-05-19T19:31:26.607Z"
-    },
-    {
-      "id": 3,
-      "title": "Henessee",
-      "monthId": 7,
-      "userId": 1,
-      "trailId": 29,
-      "dateCreated": "2025-05-19T21:34:05.019Z"
+      "trailId": 17,
+      "dateCreated": "2025-05-22T14:56:45.012Z"
     }
   ],
   "months": [

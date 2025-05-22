@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 2em;
     padding: 0.5rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 30px;
       font-family: "Kiwi Maru", serif;
@@ -16,4 +16,15 @@
   flex-basis: 20%;
   list-style-type: none;
   text-align: center;
+  justify-content: flex-end;
+}
+
+.nav-bar-item-logo {
+  display: flex;
+    flex-basis: 40%;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+  list-style-type: none;
+  text-align: center;
+  color:#264F4E;
 }

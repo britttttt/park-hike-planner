@@ -29,10 +29,12 @@ export const Login = () => {
   };
 
   return (
+    
     <main className="auth-container">
       <section>
+        
         <form className="auth-form" onSubmit={handleLogin}>
-          <h1 className="header">Plan Your Hike</h1>
+          <h1 className="header">Great Smoky Hike Plan</h1>
           <h2>Please sign in</h2>
           <fieldset className="auth-fieldset">
             <div>
@@ -52,10 +54,10 @@ export const Login = () => {
               <button type="submit">Sign in</button>
             </div>
           </fieldset>
-        </form>
-      </section>
       <section className="register-link">
         <Link to="/register">Not a member yet?</Link>
+      </section>
+        </form>
       </section>
     </main>
   );

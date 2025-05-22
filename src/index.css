@@ -5,9 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-background: linear-gradient(0deg, #264F4E 0%, #3b8a59 90%);
+  background: linear-gradient(0deg, #264F4E 0%, #3b8a59 90%);
   /* background-color: #5c8167; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,6 +18,7 @@ a {
   color: #0c6139;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #28b372;
 }
@@ -40,9 +40,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #a6dabc;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

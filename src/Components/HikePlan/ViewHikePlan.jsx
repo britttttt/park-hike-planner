@@ -88,11 +88,6 @@ export const ViewHikePlan = () => {
                             <div key={bird.comName} className="bird-entry">
                                 <p><strong>{bird.comName}</strong></p>
                                 <p>{bird.locName}</p>
-                                <img
-                                    src={`https://source.unsplash.com/?${bird.comName}`}
-                                    alt={`A ${bird.comName}`}
-                                    className="bird-image"
-                                />
                                 <a
                                     href={`https://ebird.org/species/${bird.speciesCode}`}
                                     target="_blank"

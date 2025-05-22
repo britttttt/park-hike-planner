@@ -23,6 +23,7 @@
    margin-bottom: 20px;
   background-color: rgb(39, 48, 39);
   overflow: scroll;
+  padding: 2em;
 }
 
 .plan-hike {
@@ -34,8 +35,8 @@
   background-color: #2f5a45;
   overflow-y: auto;
   max-height: 40em;
-  width: 80%;
-  padding: 20px;
+  width: 70%;
+  padding: 2em;
 }
 
 /* Scrollbar Styles */
@@ -147,27 +148,39 @@ input[type="range"]::-moz-range-thumb {
 
 .elevation-graph {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+ justify-content: flex-end;
+ align-self: center;
   align-items: center;
   position: relative;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 4 / 3; 
   background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/elevation%20bg.png?updatedAt=1747753420107");
   background-size: cover;   
+  aspect-ratio: 4 / 3; 
   background-position: center;
-  margin-top: 1rem;
 }
 
 .elevation-graph svg {
   position: absolute;
+  align-items: center;
+  justify-content: flex-end;
   top: 0;
   left: 0;
+  bottom: 50%;
   width: 80%;
   height: 50%;
   pointer-events: none; /* So clicks go through to slider if needed */
 }
 
+.elevation-input {
+ display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
 
 .row {
   display: flex;
@@ -178,4 +191,32 @@ input[type="range"]::-moz-range-thumb {
 .column {
   flex: 1;
   min-width: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
