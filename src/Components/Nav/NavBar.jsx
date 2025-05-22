@@ -4,6 +4,9 @@ import ".//NavBar.css"
 export const NavBar = () => {
     return (
         <ul className="nav-bar">
+            <li className="nav-bar-item-logo">
+                    <h3>Great Smoky Hike Plan</h3>
+            </li>
             <li className="nav-bar-item">
                 <Link className="nav-bar-link" to="/">
                     MyHikes

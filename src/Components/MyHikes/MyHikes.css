@@ -1,28 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
 
 .my-hike-plans {
+  display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 4rem auto;
   padding: 3em;
 }
 
-
 .hike-layout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2em; 
+  gap: 2em;
 }
+
+.empty-hike-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  background: linear-gradient(0deg, #473107 0%, #724410 100%);
+  border: solid 5px;
+  border-radius: 1em;
+  width: 40em;
+  height: 20em;
+  color: white;
+  text-shadow: 2px 1px 20px rgb(82, 52, 14);
+  -webkit-text-stroke: 2px #412b1709;
+}
+
+.empty-hike-plans h2 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  text-shadow: 2px 1px 20px rgb(82, 52, 14);
+  -webkit-text-stroke: 2px #412b1709;
+  font-size: 2em;
+  padding: 0%;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .created-hikes {
   display: flex;
   flex-direction: column;
+  flex-basis: 70%;
   gap: 1.5em;
   border: solid white 1px;
   flex: 1;
-  flex-shrink: 2em; 
   padding: 1.5em;
+  padding-top: 23px;
+  padding-right: 30px;
+  padding-left: 30px;
   background-color: #0c3f28;
 }
 
@@ -31,9 +67,9 @@
   flex-direction: column;
   align-self: center;
   gap: 1.5em;
-  flex: 1; 
-   font-family: "Pacifico", cursive;
-   font-size: 2.5em;
+  flex: 1;
+  font-family: "Pacifico", cursive;
+  font-size: 2.5em;
 }
 
 .hike-plan-item {
@@ -42,8 +78,16 @@
   justify-content: space-between;
   background-color: #167048;
   align-items: center;
+  width: 50em;
   padding: 1em;
 }
+
+.hero-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+} 
 
 .hero-header {
   display: flex;
@@ -62,7 +106,7 @@
 }
 
 .hero-header h3 {
-   font-family: "Pacifico", cursive;
+  font-family: "Pacifico", cursive;
   color: white;
   text-shadow: 2px 1px 20px rgb(82, 52, 14);
   -webkit-text-stroke: 2px #412b1709;
@@ -83,5 +127,85 @@
 }
 
 .header-btn:hover {
+  background-color: #0c3f28;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Alerts */
+
+.park-alerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #134e36;
+  padding: 1em;
+  border-radius: 1em;
+  width: 20em;
+  color: white;
+  font-family: "Kiwi Maru", serif;
+}
+
+.header-alert {
+  background-color: #3f0e0c;
+}
+
+.park-alert {
   background-color: #0c3f28;
 }
