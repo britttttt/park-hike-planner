@@ -58,9 +58,6 @@ export const CreateHikePlan = ({ currentUser }) => {
                 <h2>Plan Your Hike</h2>
             </div>
 
-            <div className="trail-details">
-
-            </div>
 
             <div className="plan-hike">
                 <div>

@@ -1,9 +1,6 @@
 
 const eBirdapiKey = import.meta.env.VITE_EBIRD_API_KEY;
 const eBirdapiUrl = import.meta.env.VITE_EBIRD_API_URL;
-const NPSApiKey = import.meta.env.VITE_NPS_API_KEY;
-const NPSApiUrl = import.meta.env.VITE_NPS_API_URL;
-const NPSCampgroundsUrl =import.meta.env.VITE_NPS_CAMPGROUNDS_API_URL
 const NuthatchApiKey = import.meta.env.VITE_NUTHATCH_API_KEY;
 
 // const OpenMeteoUrl = import.meta.env.VITE_OPENMET_API_URL;
@@ -63,19 +60,3 @@ export const GetNearbyBirdImage = (bird) => {
 };
 
 
-
-
-
-
-export const GetNPSAlerts = () => {
-
-    return fetch(`${NPSApiUrl}${NPSApiKey}`).then((res) => res.json())
-     .catch(error => console.log('error', error));
-
-}
-
-export const GetNPSCampgrounds = () => {
-
-  return fetch(`${NPSCampgroundsUrl}${NPSApiKey}`).then((res) => res.json())
-   .catch(error => console.log('error', error));
-}
