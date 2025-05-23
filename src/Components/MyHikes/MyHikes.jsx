@@ -56,6 +56,7 @@ export const MyHikes = ({ currentUser }) => {
                                 <h3 className="hike-title">
                                     {plan.title || "Untitled Plan"}
                                 </h3>
+                                
                                 <p>
                                     Planned Month:{" "}
                                     {months.find((month) => month.id === plan.monthId)?.name ||

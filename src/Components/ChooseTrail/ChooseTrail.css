@@ -197,13 +197,13 @@ input[type="range"]::-moz-range-thumb {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 100%;
+  width: 20em;
   background-color: black;
   color: #fff;
   text-align: center;
