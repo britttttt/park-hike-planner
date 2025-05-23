@@ -233,19 +233,23 @@ export const ChooseTrail = () => {
 
 
                         <div className="form-group">
-                            <div class="tooltip"><h3>Are you bringing dogs?</h3>
-                                <span class="tooltiptext">Dogs are not allowed in backcountry trails in the Great Smoky Mountains. There are two dog-friendly trails</span>
-                                </div>
+                           <h3>Are you bringing dogs?</h3>
+                           
+                            
 
                             <label>
+                                <div class="tooltip">
                                 <input className="dog-checkbox" type="radio" name="dog-checkbox"
                                     value={true}
                                     onChange={(event) => {
                                         setHikeFormChoices(prev => ({
                                             ...prev,
                                             bringingDogs: event.target.value === "true"
-                                        }))
-                                    }} /> Yes
+                                            
+                                        })) 
+                           
+                          
+                                        }} /> Yes  <span class="tooltiptext"><p>Dogs are not allowed on backcountry trails in the park.</p><p>There are two dog-friendly trails</p></span></div>
                             </label>
                             <label>
                                 <input className="dog-checkbox" type="radio" name="dog-checkbox"

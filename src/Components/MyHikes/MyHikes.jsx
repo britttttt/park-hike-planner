@@ -56,6 +56,7 @@ export const MyHikes = ({ currentUser }) => {
                                 <h3 className="hike-title">
                                     {plan.title || "Untitled Plan"}
                                 </h3>
+                                
                                 <p>
                                     Planned Month:{" "}
                                     {months.find((month) => month.id === plan.monthId)?.name ||
@@ -82,20 +83,24 @@ export const MyHikes = ({ currentUser }) => {
                                 Create Plan
                             </button>
                         </div>
-                    </div>
+                           
                     <div className="park-alerts">
                         <div className="header-alert">
-                            <h3>Great Smoky Mountain Park Alerts
+                            <h3>Park Alerts
                             </h3></div>
                         {alerts?.data?.length > 0 ? (
                             alerts.data.map((alert) => (
+                                <div className="alert-details">
                                 <div key={alert.id} className="park-alert">
-                                    <h4>{alert.title}</h4>
+                                    <h4>⚠️ {alert.title}</h4>
+                                    <span class="alert-details-text">{alert.description}</span>
+                                </div>
                                 </div>
                             ))
                         ) : (
                             <p>No current alerts.</p>
                         )}
+                    </div>
                     </div>
                 </div>
             )}

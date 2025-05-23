@@ -32,6 +32,14 @@
       "userId": 1,
       "trailId": 17,
       "dateCreated": "2025-05-22T14:56:45.012Z"
+    },
+    {
+      "trailId": 3,
+      "title": "",
+      "userId": 1,
+      "monthId": "",
+      "dateCreated": "2025-05-22T21:50:44.154Z",
+      "id": 3
     }
   ],
   "months": [
