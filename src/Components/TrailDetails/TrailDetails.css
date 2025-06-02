@@ -5,7 +5,7 @@
 }
 
 .trail {
-    background-color: rgb(58, 52, 35);
+    background-color:#0c3f28;
     align-self: center;
     justify-self: center;
     justify-content: center;
@@ -30,7 +30,7 @@
 }
 .trail-bg {
  
-    background-color: rgba(105, 92, 19, 0.849);
+    background-color: #0c3f28;
     background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/grsm-capstone%20bg.png?updatedAt=1748802866495");
      background-repeat: no-repeat;
      background-origin: border-box;

@@ -82,7 +82,6 @@ export const ViewHikePlan = () => {
 
 
     return (
-
         <div className="view-hike-plan">
             <div className="container">
                 <div className="hike-plan-details">
@@ -127,46 +126,47 @@ export const ViewHikePlan = () => {
 
                     <div className="recent-birds">
                         <h3>Birds Seen Recently Near This Trail</h3>
-                        {birds.map((bird) => (
-                            <div key={bird.comName} className="bird-entry">
-                                <p><strong>{bird.comName}</strong></p>
-                                <p>{bird.locName}</p>
-                                <a
-                                    href={`https://ebird.org/species/${bird.speciesCode}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bird-link"
-                                >
-                                    View on eBird
-                                </a>
-                            </div>
-                        ))}
+                        {birds?.length ? (
+                            birds.map((bird) => (
+                                <div key={bird.comName} className="bird-entry">
+                                    <p><strong>{bird.comName}</strong></p>
+                                    <p>{bird.locName}</p>
+                                    <a
+                                        href={`https://ebird.org/species/${bird.speciesCode}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bird-link"
+                                    >
+                                        View on eBird
+                                    </a>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No recent bird sightings for this trail.</p>
+                        )}
+                    </div>
+
+                    <div className="button-group">
+                        <button
+                            className="print-button"
+                            onClick={handlePrint}
+                            name="print"
+                        >
+                            Print Plan
+                        </button>
+                        <button className="print-button" onClick={() => navigate(`/EditHikePlan/${hikePlan.id}/${trail.id}`)}>
+                            Edit Plan
+                        </button>
+                        <button
+                            className="delete-button"
+                            onClick={handleDelete}
+                            name="delete"
+                        >
+                            Delete Hike
+                        </button>
                     </div>
                 </div>
             </div>
-
-            <div className="button-group">
-                <button
-                    className="print-button"
-                    onClick={handlePrint}
-                    name="print"
-                >
-                    Print Plan
-                </button>
-                <button onClick={() => navigate(`/EditHikePlan/${hikePlan.id}/${trail.id}`)}>
-                    Edit Plan
-                </button>
-                <button
-                    className="delete-button"
-                    onClick={handleDelete}
-                    name="delete"
-                >
-                    Delete Hike
-                </button>
-            </div>
         </div>
-
-
-
     )
 }

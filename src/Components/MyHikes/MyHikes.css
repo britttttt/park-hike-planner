@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Yellowtail&display=swap');
+
 .my-hike-plans {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
+  max-height: 100%;
   margin: 4rem auto;
   padding: 3em;
 }
@@ -45,7 +47,6 @@
 .centered {
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .created-hikes {

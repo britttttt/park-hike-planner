@@ -18,17 +18,28 @@
   ],
   "hikePlans": [
     {
-      "id": 1,
-      "title": "Hike So Bright I gotta wear shades",
-      "monthId": 12,
-      "day": "22",
+      "id": 2,
+      "title": "A Lil Huskey Hike",
+      "monthId": 10,
+      "day": "9",
       "userId": 1,
-      "trailId": 2,
-      "contactName": "John Travolta",
-      "contactPhone": "99999999999",
-      "notes": "It my birthday",
-      "dateCreated": "2025-06-02T04:30:17.659Z",
-      "features": []
+      "trailId": 31,
+      "contactName": "Mothman",
+      "contactPhone": "the moon",
+      "notes": "",
+      "dateCreated": "2025-06-02T12:11:55.594Z"
+    },
+    {
+      "id": 3,
+      "title": "Alum Jackson",
+      "monthId": 12,
+      "day": "25",
+      "userId": 1,
+      "trailId": 3,
+      "contactName": "Alan Jackson",
+      "contactPhone": "(999)-999-9999",
+      "notes": "cwistmas",
+      "dateCreated": "2025-06-02T12:14:14.944Z"
     }
   ],
   "months": [

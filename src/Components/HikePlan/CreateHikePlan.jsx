@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getHikePlanById, getMonths, saveHikePlan } from "../../Services/HikePlanService"
+import { deleteHikePlan, getHikePlanById, getMonths, saveHikePlan } from "../../Services/HikePlanService"
 import { useNavigate, useParams } from "react-router-dom"
 import { getTrailById } from "../../Services/TrailService"
 import "./HikePlan.css"
@@ -44,7 +44,7 @@ export const CreateHikePlan = ({ currentUser }) => {
             monthId: hikePlan.monthId,
             day: hikePlan.day,
             userId: currentUser.id,
-            trailId: trail.id, 
+            trailId: trail.id,
             contactName: hikePlan.contactName,
             contactPhone: hikePlan.contactPhone,
             notes: hikePlan.notes,
@@ -55,15 +55,27 @@ export const CreateHikePlan = ({ currentUser }) => {
             navigate("/")
         })
     }
+
+    const handleDelete = (event) => {
+        event.preventDefault()
+        if (event.target.name === "delete") {
+            if (window.confirm("Do you want to delete this hike plan?"))
+                deleteHikePlan(hikePlan.id).then(() => {
+                    window.alert("Hike Plan Deleted")
+                    navigate("/")
+                })
+        }
+    }
+
     return (
         <div className="hike-details">
 
             <div className="hike-form-header">
-                <h2>{hikePlan.title ||`My ${trail?.name} Hike` }</h2>
+                <h1>{hikePlan.title || `My ${trail?.name} Hike`}</h1>
             </div>
 
 
-            <div className="plan-hike">
+            <div className="plan-hike-scroll">
                 <div>
                     <h3>{trail.name}</h3>
                     <h5> {trail.location}</h5>
@@ -73,7 +85,7 @@ export const CreateHikePlan = ({ currentUser }) => {
                 </div>
 
                 <div className="form-group">
-                    <h3>Give your trip a title?</h3>
+                    <h3>Title</h3>
                     <input type="text"
                         className="form-control"
                         placeholder={`My ${trail?.name} Hike`}
@@ -87,7 +99,7 @@ export const CreateHikePlan = ({ currentUser }) => {
                     </input>
                 </div>
                 <div className="drop-down">
-                    <h3>What month is your hike going to be in?</h3>
+                    <h3>Month</h3>
                     <article className="dropdown">
                         <select
                             id="month-selector"
@@ -126,7 +138,7 @@ export const CreateHikePlan = ({ currentUser }) => {
                 </div>
 
                 <div className="form-group">
-                    <h3>Add notes?</h3>
+                    <h3>Notes/Medical Information</h3>
                     <input type="text"
                         className="form-control"
                         placeholder="Notes..."
@@ -166,11 +178,20 @@ export const CreateHikePlan = ({ currentUser }) => {
                 </div>
 
 
-
                 <div className="save-btn">
-                    <button onClick={handleSave}>
-                        Save Hike
-                    </button>
+                    <div >
+                        <button onClick={handleSave}>
+                            Save Hike
+                        </button>
+                    </div>
+                    <div className="delete-button">
+                        <button className="delete-button"
+                            onClick={handleDelete}
+                            name="delete">
+                            Cancel
+                        </button>
+
+                    </div>
                 </div>
 
 

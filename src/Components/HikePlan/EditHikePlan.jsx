@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { deleteHikePlan, getHikePlanById, getMonths, saveHikePlan } from "../../Services/HikePlanService"
 import { useNavigate, useParams } from "react-router-dom"
 import { getTrailById } from "../../Services/TrailService"
-
+import "./HikePlan.css"
 
 export const EditHikePlan = ({ currentUser }) => {
 
@@ -70,7 +70,7 @@ export const EditHikePlan = ({ currentUser }) => {
             </div>
 
 
-            <div className="plan-hike">
+            <div className="plan-hike-scroll">
                 <div className="trail-details">
                     <h2>{trail.name}</h2>
                     <h3>{trail.location}</h3>
