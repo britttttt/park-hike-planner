@@ -1,29 +1,45 @@
 .auth-container {
-    border: 1px solid gray;
-    margin: 3rem 15rem;
-    padding: 2rem;
-    border-radius: 1rem;
-  }
-  
-  .header {
-    font-size: 2rem;
-  }
-  
-  .auth-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .auth-form-input {
-    padding: 0.25rem;
-  }
-  
-  .register-link {
-    text-align: center;
-  }
-  
-  .auth-fieldset {
-    margin: 0.25rem 0rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 70em;
+  background-image: url('https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/National%20Park%20Capstone%20header%20-night%20night.png?updatedAt=1747926636266');
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-size: 2rem;
+ font-family: "Pacifico", cursive;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #264F4E;
+  width: 60em;
+  height: 25em;
+  border-radius: 1em;
+}
+
+.auth-form-input {
+  padding: 0.25rem;
+}
+
+.register-link {
+  text-align: center;
+}
+.register-link a {
+  text-align: center;
+  color: #2ece6b
+}
+.register-link a:hover{
+  text-align: center;
+  color: #97dab0
+}
+
+.auth-fieldset {
+  margin: 0.25rem 0rem;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Yellowtail&display=swap');
+
+.view-hike-plan {
+  display: flex;
+  flex-direction: column;
+  align-self:center;
+  justify-self: center;
+  align-items: center;
+  margin: 20px;
+  padding: 2em;
+  width: 70%;
+  background-color: #0c3f28;
+  border-radius: 1%;
+}
+
+.hike-plan-details h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: "Kiwi Maru";
+}
+
+.plan-your-hike {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.trail-details {
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: darkgreen;
+  padding: 2em;
+  margin: 1em;
+  min-width: 280px;
+  height: 100%;
+  flex: 1;
+}
+.trail-details h3 {
+  color: rgb(29, 36, 29);
+}
+
+.recent-birds {
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: darkgreen;
+  padding: 2em;
+  margin: 1em;
+  min-width: 280px;
+  flex: 1;
+}
+
+.recent-birds {
+  align-items: flex-start;
+}
+
+.bird-entry {
+  margin-bottom: 1em;
+  background-color: rgb(219, 191, 155);
+}
+
+.bird-link {
+  color: green;
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+   font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+   
+  gap: 2em;
+}
+
+.delete-button {
+  background-color: rgb(184, 17, 17);
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.important-btn-container {
+  display: flex;
+ justify-content: center;
+ margin: 1rem;
+}
+
+.plan-hike input {
+max-width: 57%;
+}
+
+.print-button {
+  background-color: #1d8f58;
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+.important-btn {
+  background-color: #1d8f58;
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 10px;
+}

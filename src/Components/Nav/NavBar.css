@@ -1,0 +1,32 @@
+.nav-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(214, 241, 228);
+  margin: 0;
+  width: 100%;
+  min-height: 2em;
+  padding: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Kiwi Maru", serif;
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar-item {
+  flex-basis: 20%;
+  list-style-type: none;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.nav-bar-item-logo {
+  display: flex;
+  flex-basis: 40%;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+  list-style-type: none;
+  text-align: center;
+  color: #264F4E;
+}

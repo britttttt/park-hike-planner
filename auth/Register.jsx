@@ -1,30 +1,27 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import { createUser, getUserByEmail } from "../src/Services/UserServices";
+import { createUser, getUserByEmail} from "../src/Services/UserServices";
 
 
 export const Register = (props) => {
   const [user, setUser] = useState({
     email: "",
     name: "",
-    cohort: 0,
   });
   let navigate = useNavigate();
 
   const registerNewUser = () => {
     const newUser = {
       ...user,
-      cohort: parseInt(user.cohort),
     };
 
     createUser(newUser).then((createdUser) => {
       if (createdUser.hasOwnProperty("id")) {
         localStorage.setItem(
-          "learning_user",
+          "hiking_user",
           JSON.stringify({
             id: createdUser.id,
-            staff: createdUser.isStaff,
           })
         );
 
@@ -53,9 +50,10 @@ export const Register = (props) => {
   };
 
   return (
+    
     <main className="auth-container">
       <form className="auth-form" onSubmit={handleRegister}>
-        <h1 className="header">Learning Moments</h1>
+        <h1 className="header">Great Smoky Hike Plan</h1>
         <h2>Please Register</h2>
         <fieldset className="auth-fieldset">
           <div>
@@ -78,18 +76,6 @@ export const Register = (props) => {
               id="email"
               className="auth-form-input"
               placeholder="Email address"
-              required
-            />
-          </div>
-        </fieldset>
-        <fieldset className="auth-fieldset">
-          <div>
-            <input
-              onChange={updateUser}
-              type="number"
-              id="cohort"
-              className="auth-form-input"
-              placeholder="Cohort #"
               required
             />
           </div>
