@@ -1,0 +1,75 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trail {
+    background-color: rgb(58, 52, 35);
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 2em;
+    width: 80%;
+    border-radius: 10px;
+}
+.trail h2 {
+    color: #ffc038;
+}
+
+.trail-details-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
+    margin: 2em;
+    background-color: rgba(235, 225, 169, 0.849);
+     border-radius: 1em;
+     
+}
+.trail-bg {
+ 
+    background-color: rgba(105, 92, 19, 0.849);
+    background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/grsm-capstone%20bg.png?updatedAt=1748802866495");
+     background-repeat: no-repeat;
+     background-origin: border-box;
+     background-size: cover;
+     border-radius: 1em;  
+}
+
+.trail-map {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-self: center;
+
+}
+.create-hike-plan-btn {
+    width: 25%;
+    padding: 1em;
+    margin: 2em;
+    background-color: rgb(34, 71, 47);
+
+}
+
+.no-map {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 50%;
+    margin: 10em;
+    padding: 20%;
+}
+.back-btn {
+    width: 25%;
+    padding: 1em;
+    margin: 2em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}

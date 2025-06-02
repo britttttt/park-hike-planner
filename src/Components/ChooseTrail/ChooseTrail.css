@@ -1,26 +1,61 @@
+.row {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  width: 100%;
+  gap: 1em;
+}
+
+.column {
+  flex: 1;
+  min-width: 1;
+  justify-content: center;
+}
+
 .Hike-Form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: center;
   align-items: center;
-  width: 100vw;
-  margin-top: 4rem;
-  padding: 3em;
+  width: 100em;
+  margin-top: 1rem;
+  padding: 2em;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group input {
+  margin: .5em;
+}
+.hike-features input {
+  margin: .5em;
+}
+
+
 .fancy-number {
-  color: #1d583c;
+  color: #ffc038;
 }
 
 .filteredTrails {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   flex-wrap: nowrap;
   flex-basis: 1;
-  height: 40em;
-  width: 90%;
+  height: 30em;
+  width: 95%;
   margin-top: 20px;
-   margin-bottom: 20px;
+  margin-bottom: 20px;
   background-color: rgb(39, 48, 39);
   overflow: scroll;
   padding: 2em;
@@ -29,14 +64,35 @@
 .plan-hike {
   display: flex;
   flex-direction: column;
+  flex-wrap: no-wrap;
   overflow: scroll;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  justify-self: center;
   border: 1px solid #0b8043;
   background-color: #2f5a45;
-  overflow-y: auto;
-  max-height: 40em;
-  width: 70%;
-  padding: 2em;
+  max-height: 28em;
+  width: 60%;
+  padding: 3em;
+  margin-top: 1em;
+  gap: 1rem;
+}
+
+.plan-hike input {
+  max-width: 100%;
+}
+
+.map-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.hike-form-header {
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 /* Scrollbar Styles */
@@ -79,7 +135,7 @@
 }
 
 .trail-card h4 {
- color: #1d8f58;
+  color:  #e6b751;
 }
 
 
@@ -93,16 +149,15 @@ input[type="range"] {
   outline: none;
 
   /*  styling the track  */
-  height: .5em;
   background: #c1fac4;
   border-radius: 16px;
-  
+
 }
 
 /* Track: webkit browsers */
 input[type="range"]::-webkit-slider-runnable-track {
   height: 15px;
-  background: #749e25;
+  background:  #ffc038;
   border-radius: 16px;
 
 }
@@ -123,12 +178,13 @@ input[type="range"]::-webkit-slider-thumb {
   background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/hikerbro.png?updatedAt=1747454153760");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   border-radius: 50%;
   border: none;
   transition: .2s ease-in-out;
   transform: rotateZ(var(--thumb-rotate, 0deg));
-  margin-top: -17.5px; /* Optional tweak to vertically center on track */
+  margin-top: -17.5px;
+  /* Optional tweak to vertically center on track */
 }
 
 /* Firefox */
@@ -149,15 +205,15 @@ input[type="range"]::-moz-range-thumb {
 .elevation-graph {
   display: flex;
   flex-direction: column;
- justify-content: flex-end;
- align-self: center;
+  justify-content: flex-end;
+  align-self: center;
+  justify-self: flex-end;
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 400px;
   background-image: url("https://ik.imagekit.io/b0xq0alh4/National%20Park%20Capstone/elevation%20bg.png?updatedAt=1747753420107");
-  background-size: cover;   
-  aspect-ratio: 4 / 3; 
+  background-size: cover;
+  aspect-ratio: 4 / 3;
   background-position: center;
 }
 
@@ -170,11 +226,12 @@ input[type="range"]::-moz-range-thumb {
   bottom: 50%;
   width: 80%;
   height: 50%;
-  pointer-events: none; /* So clicks go through to slider if needed */
+  pointer-events: none;
+  /* So clicks go through to slider if needed */
 }
 
 .elevation-input {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -182,34 +239,25 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 }
 
-.row {
-  display: flex;
-  width: 100%;
-  gap: 2rem;
-}
-
-.column {
-  flex: 1;
-  min-width: 0;
-}
 
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  
+
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 20em;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   color: #fff;
-  text-align: center;
-  padding: 5px 0;
+  text-align: left;
+  padding: 1em;
   border-radius: 6px;
- 
+  opacity: 80%;
+
   /* Position the tooltip text - see examples below! */
 
   position: absolute;
@@ -219,4 +267,30 @@ input[type="range"]::-moz-range-thumb {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.accessibility-info-container {
+  border: 1px solid white;
+  background-color: rgb(39, 48, 39);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.accessibility-expand {
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+
+.accessibility-expand a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.accessibility-expand a:hover {
+  display: flex;
+  color: rgb(17, 148, 87);
 }

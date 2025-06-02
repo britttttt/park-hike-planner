@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Yellowtail&display=swap');
 .my-hike-plans {
   display: flex;
   justify-content: center;
@@ -53,8 +53,8 @@
   flex-direction: column;
   flex-basis: 70%;
   gap: 1.5em;
-  border: solid white 1px;
   flex: 1;
+  border-radius: 1em;
   padding: 1.5em;
   padding-top: 23px;
   padding-right: 30px;
@@ -68,7 +68,7 @@
   align-self: center;
   gap: 1.5em;
   flex: 1;
-  font-family: "Pacifico", cursive;
+  font-family: "Kiwi Maru", cursive;
   font-size: 2.5em;
 }
 
@@ -77,6 +77,17 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #167048;
+  border-radius: 10px;
+  align-items: center;
+  width: 50em;
+  padding: 1em;
+}
+.hike-plan-item:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1d634c;
+  border-radius: 10px;
   align-items: center;
   width: 50em;
   padding: 1em;
@@ -87,13 +98,14 @@
   flex-direction: column;
   align-items: center;
   gap: 1em;
-} 
+}
+
 .hero-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
   background: linear-gradient(0deg, #473107 0%, #724410 100%);
   border: solid 5px;
   border-radius: 1em;
@@ -105,11 +117,11 @@
 }
 
 .hero-header h3 {
-  font-family: "Pacifico", cursive;
+  font-family: "Yellowtail", serif;
   color: white;
   text-shadow: 2px 1px 20px rgb(82, 52, 14);
   -webkit-text-stroke: 2px #412b1709;
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 0%;
 }
 
@@ -117,7 +129,7 @@
   font-size: 1em;
   padding: 0.75em 1.5em;
   background-color: #1d8f58;
-  font-family: "Kiwi Maru", serif;
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
   color: white;
   border: none;
   border-radius: 10px;
@@ -178,13 +190,23 @@
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Alerts */
@@ -193,27 +215,35 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #e0d0b6;
+  background-color: #e0d4bf;
   border-radius: 1em;
-  width: 95%;
+  width: 100%;
   color: white;
   font-family: "Kiwi Maru", serif;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   gap: 1em;
 }
 
 .header-alert {
   background-color: #3f0e0c;
-   border-radius: 1em 1em 0 0;
-   justify-items: center;
+  border-radius: 1em 1em 0 0;
+  justify-items: center;
   width: 100%;
 }
 
 .park-alert {
   color: #0c3f28;
   width: 100%;
-  border-bottom: solid 1px ;
+  justify-items: center;
+  border-bottom: solid 1px;
+  border-block-width: 10%;
   margin: 1em;
+}
+.header-alert a {
+  color: #ffffff;
+}
+.header-alert a:hover {
+  color: #a8a8a8;
 }
 
 
@@ -226,13 +256,14 @@
 /* Tooltip text */
 .alert-details .alert-details-text {
   visibility: hidden;
-  width: 100%;
-  background-color: black;
+  width: 20em;
+  background-color: rgb(58, 54, 54);
+  opacity: 80%;
   color: #fff;
-  text-align: center;
-  padding: 5px 0;
+  text-align: left;
+  padding: 1em;
   border-radius: 6px;
- 
+
   /* Position the tooltip text - see examples below! */
 
   position: absolute;

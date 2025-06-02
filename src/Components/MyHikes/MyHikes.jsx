@@ -86,7 +86,7 @@ export const MyHikes = ({ currentUser }) => {
                            
                     <div className="park-alerts">
                         <div className="header-alert">
-                            <h3>Park Alerts
+                            <h3><a href="https://www.nps.gov/grsm/planyourvisit/conditions.htm">Park Alerts</a>
                             </h3></div>
                         {alerts?.data?.length > 0 ? (
                             alerts.data.map((alert) => (
