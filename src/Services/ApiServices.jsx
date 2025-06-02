@@ -19,7 +19,7 @@ var requestOptions = {
 
 };
 
-return fetch(`${eBirdapiUrl}lat=${trail.lat}&lng=${trail.lng}&back=30&dist=10`, requestOptions)
+return fetch(`${eBirdapiUrl}lat=${trail.lat}&lng=${trail.lng}&back=14&dist=5`, requestOptions)
   .then(response => response.json())
 //   .then(result => console.log(result))
   .catch(error => console.log('error', error));

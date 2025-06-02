@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Yellowtail&display=swap');
+
 .view-hike-plan {
   display: flex;
   flex-direction: column;
+  align-self:center;
+  justify-self: center;
+  align-items: center;
   margin: 20px;
   padding: 2em;
+  width: 70%;
+  background-color: #0c3f28;
+  border-radius: 1%;
 }
 
-.hike-header {
+.hike-plan-details h1 {
   text-align: center;
   margin-bottom: 1em;
+  font-family: "Kiwi Maru";
 }
 
 .plan-your-hike {
@@ -66,14 +76,37 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
+   font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+   
   gap: 2em;
 }
 
 .delete-button {
   background-color: rgb(184, 17, 17);
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
   color: white;
+}
+
+.important-btn-container {
+  display: flex;
+ justify-content: center;
+ margin: 1rem;
 }
 
 .plan-hike input {
 max-width: 57%;
+}
+
+.print-button {
+  background-color: #1d8f58;
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+.important-btn {
+  background-color: #1d8f58;
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 10px;
 }

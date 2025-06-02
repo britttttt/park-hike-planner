@@ -22,6 +22,8 @@ export const ChooseTrail = () => {
     const [selectedFeatures, setSelectedFeatures] = useState([])
     const pathRef = useRef(null);
     const [pathLength, setPathLength] = useState(0)
+    const [showAccessibilityInfo, setShowAccessibilityInfo] = useState(false)
+    const [showDogInfo, setShowDogInfo] = useState(false)
 
     useEffect(() => {
         if (pathRef.current) {
@@ -154,11 +156,14 @@ export const ChooseTrail = () => {
                             ))}
                         </div>
                     </div>
+                    <div className="map-box">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1y0T-aHm1oD7m9N_VCEHWJFKPt0cA8Ao&ehbc=2E312F&noprof=1" width="900" height="480"></iframe>
+                    </div>
                 </div>
 
                 <div className="column">
                     <div className="hike-form-header">
-                        <h2>Plan Your Hike</h2>
+                        <h2>Trail Criteria</h2>
                     </div>
                     <div className="plan-hike">
 
@@ -233,62 +238,90 @@ export const ChooseTrail = () => {
 
 
                         <div className="form-group">
-                           <h3>Are you bringing dogs?</h3>
-                           
-                            
+                            <h3>Are you bringing dogs?</h3>
+
+
 
                             <label>
                                 <div class="tooltip">
-                                <input className="dog-checkbox" type="radio" name="dog-checkbox"
-                                    value={true}
-                                    onChange={(event) => {
-                                        setHikeFormChoices(prev => ({
-                                            ...prev,
-                                            bringingDogs: event.target.value === "true"
-                                            
-                                        })) 
-                           
-                          
-                                        }} /> Yes  <span class="tooltiptext"><p>Dogs are not allowed on backcountry trails in the park.</p><p>There are two dog-friendly trails</p></span></div>
+                                    <input className="dog-checkbox" type="radio" name="dog-checkbox"
+                                        value={true}
+                                        onChange={(event) => {
+                                            const isTrue = event.target.value === "true"
+                                            setHikeFormChoices(prev => ({
+                                                ...prev,
+                                                bringingDogs: event.target.value === "true"
+
+                                            }))
+                                            setShowDogInfo(isTrue)
+
+                                        }} />Yes </div>
                             </label>
                             <label>
                                 <input className="dog-checkbox" type="radio" name="dog-checkbox"
                                     value={false}
                                     onChange={(event) => {
+                                        const isTrue = event.target.value === "true"
                                         setHikeFormChoices(prev => ({
                                             ...prev,
                                             bringingDogs: event.target.value === "true"
                                         }))
+                                        setShowDogInfo(isTrue)
                                     }} /> No
                             </label>
                         </div>
+                        {showDogInfo && (
+                            <div className="accessibility-info-container">
+                                <div>
+                                    <p>Dogs are not allowed on backcountry trails in the park.</p>
+                                    <p>There are two dog-friendly trails</p>
+                                </div>
+                            </div>
+                        )}
 
                         <div className="form-group">
-                            <h3>Does your hike need to be accessible for wheelchairs or strollers?</h3>
+                            <h3>Do you need a trail with mobility aid rental?</h3>
                             <label>
                                 <input className="mobilityAid-checkbox" type="radio"
                                     name="mobility-aid"
-                                    value={true}
+                                    value="true"
                                     onChange={(event) => {
+                                        const isTrue = event.target.value === "true";
                                         setHikeFormChoices(prev => ({
                                             ...prev,
-                                            mobilityAccessibility: event.target.value === "true"
-                                        }))
+                                            mobilityAccessibility: isTrue
+                                        }));
+                                        setShowAccessibilityInfo(isTrue);
                                     }} /> Yes
                             </label>
                             <label>
                                 <input className="mobilityAid-checkbox" type="radio"
                                     name="mobility-aid"
-                                    value={false}
+                                    value="false"
                                     onChange={(event) => {
+                                        const isTrue = event.target.value === "true";
                                         setHikeFormChoices(prev => ({
                                             ...prev,
-                                            mobilityAccessibility: event.target.value === "true"
-                                        }))
+                                            mobilityAccessibility: isTrue
+                                        }));
+                                        setShowAccessibilityInfo(isTrue);
                                     }} /> No
                             </label>
-                        </div>
 
+                            {showAccessibilityInfo && (
+                                <div className="accessibility-info-container">
+                                    <div>
+                                        <p>Individual mobility device checkout is available on approximately 14 miles (one-way) of trails in the park. Here are some of the trails that feature mobility device checkout.</p>
+                                        <p>For further information, click the links below:</p>
+                                    </div>
+
+                                    <div className="accessibility-expand">
+                                        <a href="https://www.nps.gov/grsm/planyourvisit/trail-access-information.htm">NPS Accessibility info</a>
+                                        <a href="https://www.catalystsports.org/grit-chair-rental">Grit Chair Rental info</a>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                         <div className="hike-features">
                             <h3>Features you want to see on your hike</h3>
                             {features.map((feature) => (
@@ -322,7 +355,7 @@ export const ChooseTrail = () => {
                             <p><output id="value">{hikeFormChoices.hikeLengthMax}</output> Miles</p>
                         </div>
 
-                        <div className="form-group">
+                        <div className="elv-gain">
                             <h3>Minimum Length</h3>
                             <input
                                 type="range"
@@ -340,39 +373,40 @@ export const ChooseTrail = () => {
                             <p><output id="value">{hikeFormChoices.hikeLengthMin}</output> Miles</p>
                         </div>
 
-                        <h3>Maximum elevation gain</h3>
+                                <h3>Maximum elevation gain</h3>
                         <div className="elevation-graph">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 558" preserveAspectRatio="none"
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '80%',
-                                    pointerEvents: 'none', // SVG doesn't block interactions
-                                }}>
-                                <path
-                                    ref={pathRef}
-                                    d="M 0 600 L 50 550 L 100 500 L 100 500 L 100 500 L 150 500 L 200 450 L 250 450 L 300 400 L 350 400 L 400 350 L 450 300 L 500 300 L 550 250 L 600 200 L 650 200 L 700 150 L 750 100 L 800 50 "
-                                    stroke="#1d8f58"
-                                    strokeWidth="5"
-                                    fill="none"
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 558" preserveAspectRatio="none"
                                     style={{
-                                        strokeDasharray: pathLength,
-                                        strokeDashoffset: dashOffset,
-                                        transition: 'stroke-dashoffset 0.3s ease'
-                                    }}
-                                />
-                            </svg>
-                        </div>
-                        <div className="elevation-input">
-                            <input type="range"
-                                id="elevation-gain"
-                                min="0"
-                                max="4200"
-                                value={hikeFormChoices.hikeElvGain}
-                                onChange={handleElevationChange} />
-                            <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
+                                        position: 'absolute',
+                                        left: 0,
+                                        width: '100%',
+                                        height: '80%',
+                                        pointerEvents: 'none', // SVG doesn't block interactions
+                                    }}>
+                                    <path
+                                        ref={pathRef}
+                                        d="M 0 600 L 50 550 L 100 500 L 100 500 L 100 500 L 150 500 L 200 450 L 250 450 L 300 400 L 350 400 L 400 350 L 450 300 L 500 300 L 550 250 L 600 200 L 650 200 L 700 150 L 750 100 L 800 50 "
+                                        stroke="white"
+                                        strokeWidth="5"
+                                        fill="none"
+                                        style={{
+                                            strokeDasharray: pathLength,
+                                            strokeDashoffset: dashOffset,
+                                            transition: 'stroke-dashoffset 0.3s ease'
+                                        }}
+                                    />
+                                </svg>
+                            </div>
+                            <div className="elevation-input">
+                                <input type="range"
+                                    id="elevation-gain"
+                                    min="0"
+                                    max="4200"
+                                    value={hikeFormChoices.hikeElvGain}
+                                    onChange={handleElevationChange} />
+                                <p><output id="value">{hikeFormChoices.hikeElvGain} Feet</output></p>
+                            </div>
                         </div>
 
                     </div>

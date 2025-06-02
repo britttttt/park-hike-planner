@@ -11,35 +11,35 @@
       "id": 2
     },
     {
-      "email": "OhMyJosh@Josh.com",
+      "email": "josh@joshdarnit.com",
       "name": "Josh",
       "id": 3
     }
   ],
   "hikePlans": [
     {
-      "id": 1,
-      "title": "No Land for you",
-      "monthId": 7,
-      "userId": 1,
-      "trailId": 51,
-      "dateCreated": "2025-05-21T20:29:40.880Z"
-    },
-    {
       "id": 2,
-      "title": "Whole Lotta Cove",
-      "monthId": 5,
+      "title": "A Lil Huskey Hike",
+      "monthId": 10,
+      "day": "9",
       "userId": 1,
-      "trailId": 17,
-      "dateCreated": "2025-05-22T14:56:45.012Z"
+      "trailId": 31,
+      "contactName": "Mothman",
+      "contactPhone": "the moon",
+      "notes": "",
+      "dateCreated": "2025-06-02T12:11:55.594Z"
     },
     {
-      "trailId": 3,
-      "title": "",
+      "id": 3,
+      "title": "Alum Jackson",
+      "monthId": 12,
+      "day": "25",
       "userId": 1,
-      "monthId": "",
-      "dateCreated": "2025-05-22T21:50:44.154Z",
-      "id": 3
+      "trailId": 3,
+      "contactName": "Alan Jackson",
+      "contactPhone": "(999)-999-9999",
+      "notes": "cwistmas",
+      "dateCreated": "2025-06-02T12:14:14.944Z"
     }
   ],
   "months": [
@@ -445,7 +445,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6024,
-      "lng": -83.7766
+      "lng": -83.7766,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38889.72292946332!2d-83.8880803968585!3d35.59142070965319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885ea356cacfdd5f%3A0xf452a1083bd641ae!2sAbrams%20Falls%20Trail%2C%20Townsend%2C%20TN%2037882!5e0!3m2!1sen!2sus!4v1748796690196!5m2!1sen!2sus"
     },
     {
       "id": 2,
@@ -457,7 +458,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.7571,
-      "lng": -83.3689
+      "lng": -83.3689,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.4411821950744!2d-83.27960903011538!3d35.735101005217366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885be025ae86f2f9%3A0x420505c58b2239e4!2sAlbright%20Grove!5e0!3m2!1sen!2sus!4v1748818393346!5m2!1sen!2sus"
     },
     {
       "id": 3,
@@ -468,7 +470,8 @@
       "difficulty_score": 6.65,
       "dogFriendly": false,
       "lat": 35.6296,
-      "lng": -83.4514
+      "lng": -83.4514,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.9615910977277!2d-83.45329328758498!3d35.62867337248994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885950c28652d60b%3A0x437bdbf32c8b7c8b!2sAlum%20Cave%20Trailhead%20Parking%20Area!5e0!3m2!1sen!2sus!4v1748818482926!5m2!1sen!2sus"
     },
     {
       "id": 4,
@@ -480,7 +483,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.5568,
-      "lng": -83.4961
+      "lng": -83.4961,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.597648294482!2d-83.49619422315412!3d35.53893937263347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88594f4f8dc975eb%3A0xbd2f93e739a76f8a!2sAndrew&#39;s%20Bald!5e0!3m2!1sen!2sus!4v1748818578447!5m2!1sen!2sus"
     },
     {
       "id": 5,
@@ -492,7 +496,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6373,
-      "lng": -83.5848
+      "lng": -83.5848,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.58678757737!2d-83.58858942315098!3d35.63791197260134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885953499bc6fbed%3A0x859c2104b7175816!2sMayna%20Treanor%20Avent%20Studio!5e0!3m2!1sen!2sus!4v1748818716614!5m2!1sen!2sus"
     },
     {
       "id": 6,
@@ -504,7 +509,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.587,
-      "lng": -83.141
+      "lng": -83.141,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47565.223102218755!2d-83.22201609314709!3d35.655074505340735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885966b33d5b2353%3A0x436c991096f6f191!2sBalsam%20Mountain%20Trailhead!5e0!3m2!1sen!2sus!4v1748818772706!5m2!1sen!2sus"
     },
     {
       "id": 7,
@@ -516,7 +522,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6783,
-      "lng": -83.4872
+      "lng": -83.4872,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51855.642603380526!2d-83.55066257832034!3d35.677552000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885956e917cd2181%3A0x81138332db57ae64!2sBaskins%20Creek%20Trail%20Trailhead!5e0!3m2!1sen!2sus!4v1748818904637!5m2!1sen!2sus"
     },
     {
       "id": 8,
@@ -528,7 +535,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": null,
-      "lng": null
+      "lng": null,
+      "mapURL": null
     },
     {
       "id": 9,
@@ -540,7 +548,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.7517,
-      "lng": -83.1114
+      "lng": -83.1114,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38819.46673338089!2d-83.16582119493879!3d35.73579041791337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885bd84fe947a1a3%3A0x154a2fa440e004e6!2sBig%20Creek%20Trailhead!5e0!3m2!1sen!2sus!4v1748819988085!5m2!1sen!2sus"
     },
     {
       "id": 10,
@@ -552,7 +561,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.68048329303872,
-      "lng": -83.46238708465658
+      "lng": -83.46238708465658,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.868788993632!2d-83.46514792314969!3d35.68023267258767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859571da7209fc5%3A0xb1de287c1c86df6c!2sTrillium%20Gap%20Trail%20Trailhead!5e0!3m2!1sen!2sus!4v1748820034535!5m2!1sen!2sus"
     },
     {
       "id": 11,
@@ -564,7 +574,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.67586113459498,
-      "lng": -83.4852790421867
+      "lng": -83.4852790421867,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19997.714861231427!2d-83.49708804736896!3d35.65905641247321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885956bd842ad137%3A0x15fe6f4e904097e7!2sBullhead%20Trailhead!5e0!3m2!1sen!2sus!4v1748820135133!5m2!1sen!2sus"
     },
     {
       "id": 12,
@@ -576,7 +587,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": null,
-      "lng": null
+      "lng": null,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67309.97314087203!2d-83.11768619948802!3d35.60446954206886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88597c83631042f5%3A0xfd8b58728949a6fc!2sCataloochee%20Divide%20Trail!5e0!3m2!1sen!2sus!4v1748820237778!5m2!1sen!2sus"
     },
     {
       "id": 13,
@@ -588,7 +600,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.610972858975224,
-      "lng": -83.42509402883584
+      "lng": -83.42509402883584,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67290.24027635338!2d-83.44492383108204!3d35.62792086310386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88595bd2fbd7fad7%3A0x8640e582c46f1662!2sCharlies%20Bunion!5e0!3m2!1sen!2sus!4v1748820298271!5m2!1sen!2sus"
     },
     {
       "id": 14,
@@ -600,7 +613,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.563231669859505,
-      "lng": -83.31062182883585
+      "lng": -83.31062182883585,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29139.94023129602!2d-83.33471427096913!3d35.57612064249413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88595ceded6cda23%3A0xb1d959b185e870fb!2sChasteen%20Creek%20Cascade!5e0!3m2!1sen!2sus!4v1748820513993!5m2!1sen!2sus"
     },
     {
       "id": 15,
@@ -612,7 +626,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.66071562319872,
-      "lng": -83.70890927116413
+      "lng": -83.70890927116413,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.699517299638!2d-83.72741802771262!3d35.66038109236537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885eaecd88b6095f%3A0xea1b2f94cd660e96!2sChestnut%20Top%20Trailhead!5e0!3m2!1sen!2sus!4v1748820762446!5m2!1sen!2sus"
     },
     {
       "id": 16,
@@ -624,7 +639,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.63541886181253,
-      "lng": -83.46961005555573
+      "lng": -83.46961005555573,
+      "mapURL": null
     },
     {
       "id": 17,
@@ -636,7 +652,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.68825055948366,
-      "lng": -83.53851026628818
+      "lng": -83.53851026628818,
+      "mapURL": null
     },
     {
       "id": 18,
@@ -648,7 +665,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.64012342932832,
-      "lng": -83.56551304747657
+      "lng": -83.56551304747657,
+      "mapURL": null
     },
     {
       "id": 19,
@@ -660,7 +678,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.67555601900059,
-      "lng": -83.64640885073038
+      "lng": -83.64640885073038,
+      "mapURL": null
     },
     {
       "id": 20,
@@ -672,7 +691,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.46496752422664,
-      "lng": -83.43367751611912
+      "lng": -83.43367751611912,
+      "mapURL": null
     },
     {
       "id": 21,
@@ -684,7 +704,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.554131241038334,
-      "lng": -83.16403039186736
+      "lng": -83.16403039186736,
+      "mapURL": null
     },
     {
       "id": 22,
@@ -696,7 +717,8 @@
       "dogFriendly": true,
       "mobilityAccessibility": true,
       "lat": 35.706117925677624,
-      "lng": -83.52385156029062
+      "lng": -83.52385156029062,
+      "mapURL": null
     },
     {
       "id": 23,
@@ -708,7 +730,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.460672653524064,
-      "lng": -83.54745608650755
+      "lng": -83.54745608650755,
+      "mapURL": null
     },
     {
       "id": 24,
@@ -720,7 +743,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6968430129555,
-      "lng": -83.45991440783057
+      "lng": -83.45991440783057,
+      "mapURL": null
     },
     {
       "id": 25,
@@ -732,7 +756,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.564948465345424,
-      "lng": -83.84483349911264
+      "lng": -83.84483349911264,
+      "mapURL": null
     },
     {
       "id": 26,
@@ -744,7 +769,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.543105590560856,
-      "lng": -83.89433956329208
+      "lng": -83.89433956329208,
+      "mapURL": null
     },
     {
       "id": 27,
@@ -756,7 +782,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.68026629144316,
-      "lng": -83.4624228199175
+      "lng": -83.4624228199175,
+      "mapURL": null
     },
     {
       "id": 28,
@@ -768,7 +795,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.56334401464286,
-      "lng": -83.16145616029519
+      "lng": -83.16145616029519,
+      "mapURL": null
     },
     {
       "id": 29,
@@ -780,7 +808,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.756833292115004,
-      "lng": -83.20819642927029
+      "lng": -83.20819642927029,
+      "mapURL": null
     },
     {
       "id": 30,
@@ -792,7 +821,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": true,
       "lat": 35.653719742135785,
-      "lng": -83.58014781354065
+      "lng": -83.58014781354065,
+      "mapURL": null
     },
     {
       "id": 31,
@@ -804,7 +834,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.66347828434755,
-      "lng": -83.52637378465658
+      "lng": -83.52637378465658,
+      "mapURL": null
     },
     {
       "id": 32,
@@ -816,7 +847,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.47267715257572,
-      "lng": -83.42605040680422
+      "lng": -83.42605040680422,
+      "mapURL": null
     },
     {
       "id": 33,
@@ -828,7 +860,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.47282854887287,
-      "lng": -83.4257802123535
+      "lng": -83.4257802123535,
+      "mapURL": null
     },
     {
       "id": 34,
@@ -840,7 +873,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.67210218331858,
-      "lng": -83.58049519118056
+      "lng": -83.58049519118056,
+      "mapURL": null
     },
     {
       "id": 35,
@@ -852,7 +886,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.683768203470116,
-      "lng": -83.63946686629114
+      "lng": -83.63946686629114,
+      "mapURL": null
     },
     {
       "id": 36,
@@ -864,7 +899,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.65380453753214,
-      "lng": -83.58018367116372
+      "lng": -83.58018367116372,
+      "mapURL": null
     },
     {
       "id": 37,
@@ -876,7 +912,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.48606863456392,
-      "lng": -83.45896739497863
+      "lng": -83.45896739497863,
+      "mapURL": null
     },
     {
       "id": 38,
@@ -888,7 +925,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6409908861611,
-      "lng": -83.68909550017923
+      "lng": -83.68909550017923,
+      "mapURL": null
     },
     {
       "id": 39,
@@ -900,7 +938,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.66946000016997,
-      "lng": -83.66194787892485
+      "lng": -83.66194787892485,
+      "mapURL": null
     },
     {
       "id": 40,
@@ -912,7 +951,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.64336677249897,
-      "lng": -83.5835956357304
+      "lng": -83.5835956357304,
+      "mapURL": null
     },
     {
       "id": 41,
@@ -924,7 +964,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.61805615400635,
-      "lng": -83.66974938887698
+      "lng": -83.66974938887698,
+      "mapURL": null
     },
     {
       "id": 42,
@@ -936,7 +977,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.52085737757483,
-      "lng": -83.30950763057957
+      "lng": -83.30950763057957,
+      "mapURL": null
     },
     {
       "id": 43,
@@ -948,7 +990,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": null,
-      "lng": null
+      "lng": null,
+      "mapURL": null
     },
     {
       "id": 44,
@@ -960,7 +1003,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.75217701755348,
-      "lng": -83.20410942454737
+      "lng": -83.20410942454737,
+      "mapURL": null
     },
     {
       "id": 45,
@@ -972,7 +1016,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.62882580324922,
-      "lng": -83.38917669919822
+      "lng": -83.38917669919822,
+      "mapURL": null
     },
     {
       "id": 46,
@@ -984,7 +1029,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.67398289801009,
-      "lng": -83.49320855754844
+      "lng": -83.49320855754844,
+      "mapURL": null
     },
     {
       "id": 47,
@@ -996,7 +1042,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.67585279915401,
-      "lng": -83.48526678395656
+      "lng": -83.48526678395656,
+      "mapURL": null
     },
     {
       "id": 48,
@@ -1008,7 +1055,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.680222598332186,
-      "lng": -83.46243563681062
+      "lng": -83.46243563681062,
+      "mapURL": null
     },
     {
       "id": 49,
@@ -1020,7 +1068,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.75127757783181,
-      "lng": -83.10935661196086
+      "lng": -83.10935661196086,
+      "mapURL": null
     },
     {
       "id": 50,
@@ -1032,7 +1081,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.55294093396846,
-      "lng": -83.30981985807968
+      "lng": -83.30981985807968,
+      "mapURL": null
     },
     {
       "id": 51,
@@ -1044,7 +1094,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.567864418570664,
-      "lng": -83.47955267251936
+      "lng": -83.47955267251936,
+      "mapURL": null
     },
     {
       "id": 52,
@@ -1056,7 +1107,8 @@
       "dogFriendly": true,
       "mobilityAccessibility": true,
       "lat": 35.500437707519886,
-      "lng": -83.30352104049919
+      "lng": -83.30352104049919,
+      "mapURL": null
     },
     {
       "id": 53,
@@ -1068,7 +1120,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.6834976781236,
-      "lng": -83.49021127703594
+      "lng": -83.49021127703594,
+      "mapURL": null
     },
     {
       "id": 54,
@@ -1080,7 +1133,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.73451664409711,
-      "lng": -83.36968076774973
+      "lng": -83.36968076774973,
+      "mapURL": null
     },
     {
       "id": 55,
@@ -1092,7 +1146,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.69700611778206,
-      "lng": -83.38766494412425
+      "lng": -83.38766494412425,
+      "mapURL": null
     },
     {
       "id": 56,
@@ -1104,7 +1159,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.675747482926106,
-      "lng": -83.48563819202923
+      "lng": -83.48563819202923,
+      "mapURL": null
     },
     {
       "id": 57,
@@ -1116,7 +1172,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.70275214839833,
-      "lng": -83.3575651165883
+      "lng": -83.3575651165883,
+      "mapURL": null
     },
     {
       "id": 58,
@@ -1128,7 +1185,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.607105196708254,
-      "lng": -83.77761959815346
+      "lng": -83.77761959815346,
+      "mapURL": null
     },
     {
       "id": 59,
@@ -1140,7 +1198,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.602249193995625,
-      "lng": -83.76624800386145
+      "lng": -83.76624800386145,
+      "mapURL": null
     },
     {
       "id": 60,
@@ -1152,7 +1211,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.616434505752416,
-      "lng": -83.12033515818688
+      "lng": -83.12033515818688,
+      "mapURL": null
     },
     {
       "id": 61,
@@ -1164,7 +1224,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.61645192202434,
-      "lng": -83.12018495700217
+      "lng": -83.12018495700217,
+      "mapURL": null
     },
     {
       "id": 62,
@@ -1176,7 +1237,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.62746340631562,
-      "lng": -83.72578470582769
+      "lng": -83.72578470582769,
+      "mapURL": null
     },
     {
       "id": 63,
@@ -1188,7 +1250,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.55694511487979,
-      "lng": -83.49627785805127
+      "lng": -83.49627785805127,
+      "mapURL": null
     },
     {
       "id": 64,
@@ -1200,7 +1263,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.55597278542335,
-      "lng": -83.3120402195627
+      "lng": -83.3120402195627,
+      "mapURL": null
     },
     {
       "id": 65,
@@ -1212,7 +1276,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.605086939063256,
-      "lng": -83.77016048009631
+      "lng": -83.77016048009631,
+      "mapURL": null
     },
     {
       "id": 66,
@@ -1224,7 +1289,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.60504661364004,
-      "lng": -83.77007094949704
+      "lng": -83.77007094949704,
+      "mapURL": null
     },
     {
       "id": 67,
@@ -1236,7 +1302,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.602062950611725,
-      "lng": -83.76617631229576
+      "lng": -83.76617631229576,
+      "mapURL": null
     },
     {
       "id": 68,
@@ -1248,7 +1315,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.59571445820414,
-      "lng": -83.45806567234791
+      "lng": -83.45806567234791,
+      "mapURL": null
     },
     {
       "id": 69,
@@ -1260,7 +1328,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.595586292805706,
-      "lng": -83.45864906559497
+      "lng": -83.45864906559497,
+      "mapURL": null
     },
     {
       "id": 70,
@@ -1272,7 +1341,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.671779651490276,
-      "lng": -83.58019504234697
+      "lng": -83.58019504234697,
+      "mapURL": null
     },
     {
       "id": 71,
@@ -1284,7 +1354,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.671779651490276,
-      "lng": -83.58019504234697
+      "lng": -83.58019504234697,
+      "mapURL": null
     },
     {
       "id": 72,
@@ -1296,7 +1367,8 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.59042878692776,
-      "lng": -83.46940958307346
+      "lng": -83.46940958307346,
+      "mapURL": null
     },
     {
       "id": 73,
@@ -1308,7 +1380,21 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 35.64184801722253,
-      "lng": -83.69115098432654
+      "lng": -83.69115098432654,
+      "mapURL": null
+    },
+    {
+      "id": 74,
+      "name": "Sugarlands Valley Nature Trail",
+      "location": "Gatlinburg",
+      "distance_miles": 0.5,
+      "elevation_gain_ft": 19,
+      "difficulty_score": 2,
+      "dogFriendly": false,
+      "mobilityAccessibility": true,
+      "lat": 35.68038997275535,
+      "lng": -83.52874888270134,
+      "mapURL": null
     }
   ]
 }
