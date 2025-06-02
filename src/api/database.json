@@ -19,28 +19,16 @@
   "hikePlans": [
     {
       "id": 1,
-      "title": "Hikin wit da bois",
-      "monthId": 5,
+      "title": "Hike So Bright I gotta wear shades",
+      "monthId": 12,
+      "day": "22",
       "userId": 1,
-      "trailId": 10,
-      "dateCreated": "2025-05-24T01:19:05.301Z",
+      "trailId": 2,
+      "contactName": "John Travolta",
+      "contactPhone": "99999999999",
+      "notes": "It my birthday",
+      "dateCreated": "2025-06-02T04:30:17.659Z",
       "features": []
-    },
-    {
-      "id": 2,
-      "title": "Hike with Liza",
-      "monthId": 5,
-      "userId": 1,
-      "trailId": 1,
-      "dateCreated": "2025-06-01T19:05:55.368Z"
-    },
-    {
-      "id": 3,
-      "title": "Alum Jackson",
-      "monthId": 4,
-      "userId": 1,
-      "trailId": 3,
-      "dateCreated": "2025-06-02T00:02:27.788Z"
     }
   ],
   "months": [

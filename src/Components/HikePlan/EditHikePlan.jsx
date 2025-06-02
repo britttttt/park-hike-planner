@@ -65,22 +65,19 @@ export const EditHikePlan = ({ currentUser }) => {
 
         <div>
 
-            <div className="hike-form-header">
-                <h2>Plan Your Hike</h2>
+            <div className="hike-plan-details">
+                <h1>{hikePlan.title}</h1>
             </div>
 
-            <div className="trail-details">
-
-            </div>
 
             <div className="plan-hike">
-                <div>
-                    <h2>{hikePlan.title}</h2>
-                    <h2>My {trail.name} Hike</h2>
-                    <h4>{trail.location}</h4>
-                    <h4>{trail.distance_miles} miles</h4>
-                    <h4>{trail.elevation_gain_ft} ft elevation gain</h4>
-                    <h4>{trail.difficulty_score} difficulty score</h4>
+                <div className="trail-details">
+                    <h2>{trail.name}</h2>
+                    <h3>{trail.location}</h3>
+                    <h3>{trail.distance_miles} miles</h3>
+                    <h3>{trail.elevation_gain_ft} ft elevation gain</h3>
+                    <h3>{trail.difficulty_score} difficulty score</h3>
+                    <h3>{trail.lat}, {trail.lng}</h3>
                 </div>
 
                 <div className="form-group">
@@ -121,15 +118,71 @@ export const EditHikePlan = ({ currentUser }) => {
                         </select>
                     </article>
                 </div>
+                <div className="form-group">
+                    <h3>Day</h3>
+                    <input type="number"
+                        className="form-control"
+                        value={hikePlan.day}
+                        min={1}
+                        max={31}
+                        onChange={(event) => {
+                            const copy = { ...hikePlan }
+                            copy.day = event.target.value
+                            setHikePlan(copy)
+                        }}>
 
+                    </input>
+                </div>
 
-                <div>
+                <div className="form-group">
+                    <h3>Update notes?</h3>
+                    <input type="text"
+                        className="form-control"
+                        placeholder="Notes..."
+                        value={hikePlan.notes}
+                        onChange={(event) => {
+                            const copy = { ...hikePlan }
+                            copy.notes = event.target.value
+                            setHikePlan(copy)
+                        }}>
+
+                    </input>
+
+                    <div className="form-group">
+                        <h3>Emergency Contact</h3>
+                        <input type="text"
+                            className="form-control"
+                            placeholder="Emergency Contact Name"
+                            value={hikePlan.contactName}
+                            onChange={(event) => {
+                                const copy = { ...hikePlan }
+                                copy.contactName = event.target.value
+                                setHikePlan(copy)
+                            }}>
+
+                        </input>
+                        <input type="tel"
+                            id="phone"
+                            className="form-control"
+                            placeholder="Emergency Contact Name"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            value={hikePlan.contactPhone}
+                            onChange={(event) => {
+                                const copy = { ...hikePlan }
+                                copy.contactPhone = event.target.value
+                                setHikePlan(copy)
+                            }}>
+
+                        </input>
+                    </div>
+
+                </div>
+                <div className="button-group">
                     <button onClick={handleSave}>
                         Save Hike
                     </button>
-                </div>
-                <div>
-                    <button onClick={handleDelete}
+                    <button className="delete-button"
+                        onClick={handleDelete}
                         name="delete">
                         Delete Hike
                     </button>

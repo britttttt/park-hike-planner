@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Yellowtail&display=swap');
+
 .hike-details {
 display: flex;
 flex-direction: column;
@@ -13,4 +16,13 @@ justify-content: center;
 align-items: center;
 margin: 5em;
 padding: 2em;
+}
+
+.form-control {
+    width: 30em;
+    height: 3em;
+}
+.drop-down select {
+    width: 30em;
+    height: 3em;
 }

@@ -51,35 +51,78 @@ export const ViewHikePlan = () => {
         }
     }
 
+    const handlePrint = (event) => {
+        event.preventDefault()
+        const printContents = document.querySelector(".hike-plan-details")?.innerHTML;
+
+        const printWindow = window.open("", "_blank", "width=800,height=600");
+
+        if (printWindow) {
+            printWindow.document.open();
+            printWindow.document.write(`
+            <html>
+                <head>
+                    <title>Hike Plan</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            padding: 20px;
+                        }
+                    </style>
+                </head>
+                <body onload="window.print(); window.close();">
+                    ${printContents}
+                </body>
+            </html>
+        `)
+            printWindow.document.close()
+        }
+    };
+
 
 
     return (
 
         <div className="view-hike-plan">
-
-            <div className="hike-header">
-                <h2>Plan Your Hike</h2>
-            </div>
-
-            <div className="plan-hike">
+            <div className="container">
                 <div className="hike-plan-details">
-                    <h2>{hikePlan.title}</h2>
+                    <h1>{hikePlan.title}</h1>
                     <div className="planned-month">
                         <h4>
                             Planned Month: {
                                 months.find((month) => month.id === hikePlan.monthId)?.name || "Not set"
-                            }
+                            } | Day : {hikePlan.day}
                         </h4>
                     </div>
-                </div>
+                    <h4>Notes: {hikePlan.notes}</h4>
+                    <h4>Emergency Contact: {hikePlan.contactName} | {hikePlan.contactPhone}</h4>
 
-                <div className="layout-row">
-                    <div className="trail-details">
-                        <h2>{trail.name} Hike</h2>
-                        <h3>{trail.location}</h3>
-                        <h3>{trail.distance_miles} miles</h3>
-                        <h3>{trail.elevation_gain_ft} ft elevation gain</h3>
-                        <h3>{trail.difficulty_score} difficulty score</h3>
+                    <div className="important-btn-container">
+                        <button className="important-btn" onClick={() => window.open("https://www.nps.gov/grsm/planyourvisit/emergency.htm", '_blank')}>Great Smoky Mountain National Park Emergency Info</button>
+                    </div>
+
+
+                    <div className="layout-row">
+
+                        <div className="trail-details">
+                            <h2>{trail.name}</h2>
+                            <h3>{trail.location}</h3>
+                            <h3>{trail.distance_miles} miles</h3>
+                            <h3>{trail.elevation_gain_ft} ft elevation gain</h3>
+                            <h3>{trail.difficulty_score} difficulty score</h3>
+                            <h3>{trail.lat}, {trail.lng}</h3>
+                        </div>
+
+                        <div className="trail-map">
+                            {trail.mapURL === null ? (
+                                <div className="no-map">
+                                    <h3>No map data available</h3>
+                                </div>
+                            ) : (
+
+                                <iframe src={trail.mapURL} width="600" height="370" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            )}
+                        </div>
                     </div>
 
                     <div className="recent-birds">
@@ -103,6 +146,13 @@ export const ViewHikePlan = () => {
             </div>
 
             <div className="button-group">
+                <button
+                    className="print-button"
+                    onClick={handlePrint}
+                    name="print"
+                >
+                    Print Plan
+                </button>
                 <button onClick={() => navigate(`/EditHikePlan/${hikePlan.id}/${trail.id}`)}>
                     Edit Plan
                 </button>
@@ -114,8 +164,9 @@ export const ViewHikePlan = () => {
                     Delete Hike
                 </button>
             </div>
-
         </div>
+
+
 
     )
 }
