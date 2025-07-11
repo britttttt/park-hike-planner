@@ -16,32 +16,7 @@
       "id": 3
     }
   ],
-  "hikePlans": [
-    {
-      "id": 2,
-      "title": "A Lil Huskey Hike",
-      "monthId": 10,
-      "day": "9",
-      "userId": 1,
-      "trailId": 31,
-      "contactName": "Mothman",
-      "contactPhone": "the moon",
-      "notes": "",
-      "dateCreated": "2025-06-02T12:11:55.594Z"
-    },
-    {
-      "id": 3,
-      "title": "Alum Jackson",
-      "monthId": 12,
-      "day": "25",
-      "userId": 1,
-      "trailId": 3,
-      "contactName": "Alan Jackson",
-      "contactPhone": "(999)-999-9999",
-      "notes": "cwistmas",
-      "dateCreated": "2025-06-02T12:14:14.944Z"
-    }
-  ],
+  "hikePlans": [],
   "months": [
     {
       "id": 1,
