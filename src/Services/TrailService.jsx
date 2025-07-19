@@ -1,19 +1,19 @@
 export const getFeatures = () => {
-    return fetch(`http://localhost:8088/features`).then((res) => res.json())
+    return fetch(`https://park-hike-planner.onrender.com/features`).then((res) => res.json())
 }
 
 export const getTrails = () => {
-    return fetch(`http://localhost:8088/trails`).then((res) => res.json())
+    return fetch(`https://park-hike-planner.onrender.com/trails`).then((res) => res.json())
 }
 
 export const getTrailById = (trailId) => {
-    return fetch(`http://localhost:8088/trails?id=${trailId}&expand=trail`)
+    return fetch(`https://park-hike-planner.onrender.com/trails?id=${trailId}&expand=trail`)
         .then((res) => res.json())
         .then((trails) => trails[0])
 }
 
 export const getTrailFeatures = () => {
-    return fetch(`http://localhost:8088/trailFeatures`).then((res) => res.json())
+    return fetch(`https://park-hike-planner.onrender.com/trailFeatures`).then((res) => res.json())
 }
 
 export const getTrailsWithFeatures = () => {
