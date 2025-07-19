@@ -5,5 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/park-hike-planner/",
   plugins: [react()],
-  base:"/park-hike-planner/",
 })
