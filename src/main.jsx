@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <NPSApiProvider>
-  <BrowserRouter basename='/<park-hike-planner>/' >
+  <BrowserRouter basename='/<park-hike-planner>' >
     <App />
   </BrowserRouter>
   </NPSApiProvider>
