@@ -1,5 +1,5 @@
 export const getUserByEmail = (email) => {
-    return fetch(`https://park-hike-planner.onrender.comusers?email=${email}`).then((res) =>
+    return fetch(`https://park-hike-planner.onrender.com/users?email=${email}`).then((res) =>
       res.json()
     );
   };
