@@ -1,5 +1,4 @@
-{
-  "homepage": "https://britttttt.github.io/park-hike-planner/",
+{ "homepage": "https://britttttt.github.io/park-hike-planner/",
   "name": "park-hike-planner",
   "private": true,
   "version": "0.0.0",
@@ -14,6 +13,7 @@
     "start": "json-server --watch database.json --port 8000"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
