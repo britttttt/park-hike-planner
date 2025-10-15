@@ -1370,6 +1370,19 @@
       "lat": 35.68038997275535,
       "lng": -83.52874888270134,
       "mapURL": null
+    }, 
+    {
+      "id": 75,
+      "name": "Ace Gap Trail",
+      "location": "Cades Cove",
+      "distance_miles": 5.6,
+      "elevation_gain_ft": 0,
+      "difficulty_score": 3,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 0,
+      "lng": -0,
+      "mapURL": null
     }
   ]
 }
