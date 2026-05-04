@@ -1370,7 +1370,7 @@
       "lat": 35.68038997275535,
       "lng": -83.52874888270134,
       "mapURL": null
-    }, 
+    },
     {
       "id": 75,
       "name": "Ace Gap Trail",
@@ -1381,7 +1381,20 @@
       "dogFriendly": false,
       "mobilityAccessibility": false,
       "lat": 0,
-      "lng": -0,
+      "lng": 0,
+      "mapURL": null
+    },
+    {
+      "id": 76,
+      "name":"Anthony Creek Trail",
+      "location": "Cades Cove",
+      "distance_miles": 3.6,
+      "elevation_gain_ft": 1821,
+      "difficulty_score": 5,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.60513174510641,
+      "lng": -83.76959462860044,
       "mapURL": null
     }
   ]
