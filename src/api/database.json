@@ -1435,6 +1435,19 @@
       "lat": 35.61724229155891, 
       "lng": -83.11911011221935,
       "mapURL": null
+    },
+    {
+      "id": 80,
+      "name":"Bone Valley Trail",
+      "location": "Hazel Creel Trail",
+      "distance_miles": 1.8,
+      "elevation_gain_ft": 203,
+      "difficulty_score": 6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.51001993487474, 
+      "lng": -83.67989972940622,
+      "mapURL": null
     }
   ]
 }
