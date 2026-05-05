@@ -1409,6 +1409,19 @@
       "lat": 35.75121617115742, 
       "lng": -83.1096655865055,
       "mapURL": null
-    }
+    },
+    {
+      "id": 78,
+      "name":"Beard Cane Trail",
+      "location": "Abrams Creek Campground",
+      "distance_miles": 4.2,
+      "elevation_gain_ft": 1940,
+      "difficulty_score": 9,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.75121617115742, 
+      "lng": -83.1096655865055,
+      "mapURL": null
+    },
   ]
 }
