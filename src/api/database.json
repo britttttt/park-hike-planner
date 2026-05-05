@@ -1423,5 +1423,18 @@
       "lng": -83.1096655865055,
       "mapURL": null
     },
+    {
+      "id": 79,
+      "name":"Big Fork Ridge Trail",
+      "location": "Cataloochee",
+      "distance_miles": 3.2,
+      "elevation_gain_ft": 1870,
+      "difficulty_score": 6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.61724229155891, 
+      "lng": -83.11911011221935,
+      "mapURL": null
+    }
   ]
 }
