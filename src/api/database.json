@@ -1448,6 +1448,19 @@
       "lat": 35.51001993487474, 
       "lng": -83.67989972940622,
       "mapURL": null
+    },
+    {
+      "id": 81,
+      "name":"Boogerman Trail",
+      "location": "Maggie Valley",
+      "distance_miles": 4.1,
+      "elevation_gain_ft": 1000,
+      "difficulty_score": 6,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.61506228619724, 
+      "lng": -83.08400016269228,
+      "mapURL": null
     }
   ]
 }
