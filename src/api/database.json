@@ -1396,6 +1396,19 @@
       "lat": 35.60513174510641,
       "lng": -83.76959462860044,
       "mapURL": null
+    },
+    {
+      "id": 77,
+      "name":"Baxter Creek Trail",
+      "location": "Big Creek",
+      "distance_miles": 6.1,
+      "elevation_gain_ft": 1821,
+      "difficulty_score": 9,
+      "dogFriendly": false,
+      "mobilityAccessibility": false,
+      "lat": 35.75121617115742, 
+      "lng": -83.1096655865055,
+      "mapURL": null
     }
   ]
 }
