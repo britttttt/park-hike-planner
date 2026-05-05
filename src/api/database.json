@@ -1470,7 +1470,7 @@
       "mobilityAccessibility": false,
       "lat": 35.60513174510641,
       "lng": -83.76959462860044,
-      "mapURL": null,
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110538.58144780253!2d-83.90287209286195!3d35.60799386143721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885ea560986efda7%3A0xed11df7a52b148aa!2sAnthony%20Creek%20Trail!5e1!3m2!1sen!2sus!4v1777944243673!5m2!1sen!2sus" ,
       "cautions": null
     },
     {
@@ -1485,7 +1485,7 @@
       "lat": 35.75121617115742, 
       "lng": -83.1096655865055,
       "mapURL": null,
-      "cautions": null
+      "cautions": "Steep Rocky Trail"
     },
     {
       "id": 78,
@@ -1499,7 +1499,7 @@
       "lat": 35.75121617115742, 
       "lng": -83.1096655865055,
       "mapURL": null,
-      "cautions": null
+      "cautions": "Hesse and Beard Cane creek crossings in high water"
     },
     {
       "id": 79,
@@ -1513,7 +1513,7 @@
       "lat": 35.61724229155891, 
       "lng": -83.11911011221935,
       "mapURL": null,
-      "cautions": null
+      "cautions": "Erosion in steep sections"
     },
     {
       "id": 80,
@@ -1526,8 +1526,8 @@
       "mobilityAccessibility": false,
       "lat": 35.51001993487474, 
       "lng": -83.67989972940622,
-      "mapURL": null,
-      "cautions": null
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248128.71512245628!2d-83.654413971875!3d35.615087284481646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885eb160629787bb%3A0xd35af6c13a0627dd!2sBone%20Vly%20Trl%2C%20North%20Carolina%2028771!5e1!3m2!1sen!2sus!4v1777943935001!5m2!1sen!2sus",
+      "cautions": "Four major and one minor unbridged stream crossings"
     },
     {
       "id": 81,
@@ -1540,8 +1540,8 @@
       "mobilityAccessibility": false,
       "lat": 35.61506228619724, 
       "lng": -83.08400016269228,
-      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4745.635242726905!2d-83.0834879886162!3d35.61566014967501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885964b158cbae6d%3A0x2382dbb126e41606!2sBoogerman%20Trail%2C%20North%20Carolina%2028785!5e1!3m2!1sen!2sus!4v1777943760224!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade",
-      "cautions": null
+      "mapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4745.635242726905!2d-83.0834879886162!3d35.61566014967501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885964b158cbae6d%3A0x2382dbb126e41606!2sBoogerman%20Trail%2C%20North%20Carolina%2028785!5e1!3m2!1sen!2sus!4v1777943760224!5m2!1sen!2sus",
+      "cautions": "Stream crossings"
     }
   ]
 }
